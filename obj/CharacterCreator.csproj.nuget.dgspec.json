@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edixon\\C# Projects\\PRO150\\CharacterCreator\\CharacterCreator.csproj": {}
+    "C:\\Users\\Joshua\\OneDrive\\Second Year\\Winter\\Web Projects\\PRO150_CharacterCreator\\CharacterCreator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edixon\\C# Projects\\PRO150\\CharacterCreator\\CharacterCreator.csproj": {
+    "C:\\Users\\Joshua\\OneDrive\\Second Year\\Winter\\Web Projects\\PRO150_CharacterCreator\\CharacterCreator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edixon\\C# Projects\\PRO150\\CharacterCreator\\CharacterCreator.csproj",
+        "projectUniqueName": "C:\\Users\\Joshua\\OneDrive\\Second Year\\Winter\\Web Projects\\PRO150_CharacterCreator\\CharacterCreator.csproj",
         "projectName": "CharacterCreator",
-        "projectPath": "C:\\Users\\edixon\\C# Projects\\PRO150\\CharacterCreator\\CharacterCreator.csproj",
-        "packagesPath": "C:\\Users\\edixon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edixon\\C# Projects\\PRO150\\CharacterCreator\\obj\\",
+        "projectPath": "C:\\Users\\Joshua\\OneDrive\\Second Year\\Winter\\Web Projects\\PRO150_CharacterCreator\\CharacterCreator.csproj",
+        "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Joshua\\OneDrive\\Second Year\\Winter\\Web Projects\\PRO150_CharacterCreator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\edixon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Joshua\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
