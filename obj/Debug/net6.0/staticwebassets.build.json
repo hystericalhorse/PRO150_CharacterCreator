@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VUTixIKhwvdtzvcwIcAQLtx+w8BgjYku5g7KH3YfVUs=",
+  "Hash": "wl95PS+qDpseHiHEvFdJWYt3O79C1ct7Syqg95RW54c=",
   "Source": "CharacterCreator",
   "BasePath": "_content/CharacterCreator",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Joshua\\OneDrive\\Second Year\\Winter\\Web Projects\\PRO150_CharacterCreator\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CharacterCreator.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Joshua\\OneDrive\\Second Year\\Winter\\Web Projects\\PRO150_CharacterCreator\\wwwroot\\css\\bootstrap.css",
+      "SourceId": "CharacterCreator",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Joshua\\OneDrive\\Second Year\\Winter\\Web Projects\\PRO150_CharacterCreator\\wwwroot\\",
+      "BasePath": "_content/CharacterCreator",
+      "RelativePath": "css/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.css"
     },
     {
       "Identity": "C:\\Users\\Joshua\\OneDrive\\Second Year\\Winter\\Web Projects\\PRO150_CharacterCreator\\wwwroot\\css\\site.css",
