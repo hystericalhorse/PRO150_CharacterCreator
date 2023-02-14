@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\CharacterCreator.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\edixon\\C# Projects\\PRO150\\CharacterCreator\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
       "Id": "C:\\Users\\edixon\\C# Projects\\PRO150\\CharacterCreator\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

@@ -1,0 +1,23 @@
+﻿@model Accounts
+
+<h4>@TempData["Success"]</h4>
+<form asp-controller="Account" asp-action="CreateAccount" method="post">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-secondary">Create Account</h2>
+			<hr />
+			<div asp-validation-summary="All" class="text-danger"></div>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Username"></label>
+			<input asp-for="Username" class="form-control" />
+			<span asp-validation-for="Username" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Password"></label>
+			<input asp-for="Password" class="form-control" />
+			<span asp-validation-for="Password" class="text-danger"></span>
+		</div>
+		<button type="submit" class="btn btn-primary" fdprocessedid="vccu1">Create Account</button>
+	</div>
+</form>

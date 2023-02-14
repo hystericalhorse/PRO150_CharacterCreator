@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\edixon\C# Projects\PRO150\CharacterCreator
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/edixon/C\# Projects/PRO150/CharacterCreator/Views/Account/CreateAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDcmVhdGVBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edixon/C\# Projects/PRO150/CharacterCreator/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/edixon/C\# Projects/PRO150/CharacterCreator/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/edixon/C\# Projects/PRO150/CharacterCreator/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edixon/C\# Projects/PRO150/CharacterCreator/Views/Shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/edixon/C\# Projects/PRO150/CharacterCreator/Views/Shared/_ValidationScriptsPartial.cshtml]
