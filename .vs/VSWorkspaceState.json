@@ -1,11 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\bin",
+    "\\Controllers",
+    "\\Models",
+    "\\obj",
+    "\\Properties",
     "\\Views",
-    "\\Views\\Home",
-    "\\wwwroot"
+    "\\Views\\Shared"
   ],
-  "SelectedNode": "\\Views\\Home\\Index.cshtml",
+  "SelectedNode": "\\CharacterCreator.sln",
   "PreviewInSolutionExplorer": false
 }
