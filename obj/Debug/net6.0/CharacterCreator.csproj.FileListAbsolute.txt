@@ -91,3 +91,36 @@ C:\Users\joperez\OneDrive - Neumont College of Computer Science\Desktop\Characte
 C:\Users\joperez\OneDrive - Neumont College of Computer Science\Desktop\CharacterCreator\obj\Debug\net6.0\CharacterCreator.pdb
 C:\Users\joperez\OneDrive - Neumont College of Computer Science\Desktop\CharacterCreator\obj\Debug\net6.0\CharacterCreator.genruntimeconfig.cache
 C:\Users\joperez\OneDrive - Neumont College of Computer Science\Desktop\CharacterCreator\obj\Debug\net6.0\ref\CharacterCreator.dll
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.csproj.AssemblyReference.cache
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.AssemblyInfoInputs.cache
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.AssemblyInfo.cs
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.csproj.CoreCompileInputs.cache
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.MvcApplicationPartsAssemblyInfo.cache
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.RazorAssemblyInfo.cache
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.RazorAssemblyInfo.cs
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.dll
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\refint\CharacterCreator.dll
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.pdb
+C:\Neumont\NeuQ6\WebProj\Web\bin\Debug\net6.0\appsettings.Development.json
+C:\Neumont\NeuQ6\WebProj\Web\bin\Debug\net6.0\appsettings.json
+C:\Neumont\NeuQ6\WebProj\Web\bin\Debug\net6.0\CharacterCreator.staticwebassets.runtime.json
+C:\Neumont\NeuQ6\WebProj\Web\bin\Debug\net6.0\CharacterCreator.exe
+C:\Neumont\NeuQ6\WebProj\Web\bin\Debug\net6.0\CharacterCreator.deps.json
+C:\Neumont\NeuQ6\WebProj\Web\bin\Debug\net6.0\CharacterCreator.runtimeconfig.json
+C:\Neumont\NeuQ6\WebProj\Web\bin\Debug\net6.0\CharacterCreator.dll
+C:\Neumont\NeuQ6\WebProj\Web\bin\Debug\net6.0\CharacterCreator.pdb
+C:\Neumont\NeuQ6\WebProj\Web\bin\Debug\net6.0\RestSharp.dll
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\staticwebassets\msbuild.CharacterCreator.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\staticwebassets\msbuild.build.CharacterCreator.props
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CharacterCreator.props
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CharacterCreator.props
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\staticwebassets.build.json
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\staticwebassets.development.json
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\scopedcss\bundle\CharacterCreator.styles.css
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\scopedcss\projectbundle\CharacterCreator.bundle.scp.css
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.csproj.CopyComplete
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.genruntimeconfig.cache
+C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\ref\CharacterCreator.dll
