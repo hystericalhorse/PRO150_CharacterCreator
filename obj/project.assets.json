@@ -41,23 +41,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Zacharias Lovato\\.nuget\\packages\\": {},
+    "C:\\Users\\edixon\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Neumont\\NeuQ6\\WebProj\\Web\\CharacterCreator.csproj",
+      "projectUniqueName": "C:\\Users\\edixon\\C# Projects\\PRO150\\CharacterCreator\\CharacterCreator.csproj",
       "projectName": "CharacterCreator",
-      "projectPath": "C:\\Neumont\\NeuQ6\\WebProj\\Web\\CharacterCreator.csproj",
-      "packagesPath": "C:\\Users\\Zacharias Lovato\\.nuget\\packages\\",
-      "outputPath": "C:\\Neumont\\NeuQ6\\WebProj\\Web\\obj\\",
+      "projectPath": "C:\\Users\\edixon\\C# Projects\\PRO150\\CharacterCreator\\CharacterCreator.csproj",
+      "packagesPath": "C:\\Users\\edixon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\edixon\\C# Projects\\PRO150\\CharacterCreator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Zacharias Lovato\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\edixon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -66,6 +66,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

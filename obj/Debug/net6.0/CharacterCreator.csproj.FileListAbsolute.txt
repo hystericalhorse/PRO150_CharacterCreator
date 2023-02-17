@@ -124,3 +124,5 @@ C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\scopedcss\projectbundle\CharacterC
 C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.csproj.CopyComplete
 C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.genruntimeconfig.cache
 C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\ref\CharacterCreator.dll
+C:\Users\edixon\C# Projects\PRO150\CharacterCreator\bin\Debug\net6.0\RestSharp.dll
+C:\Users\edixon\C# Projects\PRO150\CharacterCreator\obj\Debug\net6.0\CharacterCreator.csproj.CopyComplete

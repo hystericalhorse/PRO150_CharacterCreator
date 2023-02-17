@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gh/ol1GhewAiuUYefTz02TTMwgrMutzdpRH3hbnqKJp09zw7Of7ewyY/2Vx3dXrGVsboCmEK/I5iIVaF6eg3iA==",
+  "dgSpecHash": "owf5DvvZkxjveOdyvmulH8Xohja30ZuqYQtZZeWhNH368qETFjTHcHFS/6nSMPmJdRD9XzxgVfXM1WtF3lGC8g==",
   "success": true,
-  "projectFilePath": "C:\\Neumont\\NeuQ6\\WebProj\\Web\\CharacterCreator.csproj",
+  "projectFilePath": "C:\\Users\\edixon\\C# Projects\\PRO150\\CharacterCreator\\CharacterCreator.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Zacharias Lovato\\.nuget\\packages\\restsharp\\106.15.0\\restsharp.106.15.0.nupkg.sha512"
+    "C:\\Users\\edixon\\.nuget\\packages\\restsharp\\106.15.0\\restsharp.106.15.0.nupkg.sha512"
   ],
   "logs": []
 }
