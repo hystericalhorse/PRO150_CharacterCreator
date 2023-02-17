@@ -6,4 +6,20 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="wwwroot\API\**" />
+    <Content Remove="wwwroot\API\**" />
+    <EmbeddedResource Remove="wwwroot\API\**" />
+    <None Remove="wwwroot\API\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\APIfiles\APIOutput\" />
+    <Folder Include="wwwroot\APIfiles\APIResources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RestSharp" Version="106.15.0" />
+  </ItemGroup>
+
 </Project>

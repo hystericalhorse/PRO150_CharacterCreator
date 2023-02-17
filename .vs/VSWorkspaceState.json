@@ -6,6 +6,9 @@
     "\\obj",
     "\\Properties",
     "\\Views",
+    "\\Views\\Account",
+    "\\Views\\Character",
+    "\\Views\\Home",
     "\\Views\\Shared"
   ],
   "SelectedNode": "\\CharacterCreator.sln",
