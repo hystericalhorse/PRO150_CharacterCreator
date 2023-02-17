@@ -1,0 +1,39 @@
+﻿@model Accounts
+<h4>@TempData["Success"]</h4>
+
+<form method="post" asp-controller="Account" asp-action="Profile">
+	<div class="text-center">
+        <div>
+            <h1><b>Profile Page</b></h1>
+            <h3><b>View and edit your profile information</b></h3>
+            <hr/>
+        </div>
+        <div>
+            <h2><label asp-for="Username"></label></h2>
+            <h4>Change your username</h4>
+            <input asp-for="Username" class="form-control"/>
+            <hr/>
+        </div>
+        <div class="mb-3">
+            <h2><label asp-for="Bio"></label></h2>
+            <h4>Write a short bio about yourself or don't</h4>
+            <input asp-for="Bio" class="form-control"/>
+            <hr/>
+        </div>
+        <div>
+            <h2><label asp-for="Email"></label></h2>
+            <h4>Change your email</h4>
+            <input asp-for="Email" class="form-control" />
+            <hr />
+        </div>
+        <div>
+            <h2><label asp-for="Password"></label></h2>
+            <h4>Bottom Text</h4>
+            <input asp-for="Password" class="form-control" />
+            <hr />
+        </div>
+        <button type="submit" class="btn btn-primary">
+            <i class="bi bi-arrow-down-circle"></i> Update profile
+        </button>
+    </div>
+</form>
