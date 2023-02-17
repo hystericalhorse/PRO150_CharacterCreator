@@ -126,3 +126,5 @@ C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.genruntimeconfig.
 C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\ref\CharacterCreator.dll
 C:\Users\edixon\C# Projects\PRO150\CharacterCreator\bin\Debug\net6.0\RestSharp.dll
 C:\Users\edixon\C# Projects\PRO150\CharacterCreator\obj\Debug\net6.0\CharacterCreator.csproj.CopyComplete
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\RestSharp.dll
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.csproj.CopyComplete
