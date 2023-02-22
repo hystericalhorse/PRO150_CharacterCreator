@@ -9,53 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CharacterCreator
 build_property.RootNamespace = CharacterCreator
-build_property.ProjectDir = C:\Neumont\NeuQ6\WebProj\Web\
+build_property.ProjectDir = C:\Users\joperez\OneDrive - Neumont College of Computer Science\Desktop\CharacterCreator\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Neumont\NeuQ6\WebProj\Web
+build_property.MSBuildProjectDirectory = C:\Users\joperez\OneDrive - Neumont College of Computer Science\Desktop\CharacterCreator
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Neumont/NeuQ6/WebProj/Web/Views/Account/CreateAccount.cshtml]
+[C:/Users/joperez/OneDrive - Neumont College of Computer Science/Desktop/CharacterCreator/Views/Account/CreateAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDcmVhdGVBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Neumont/NeuQ6/WebProj/Web/Views/Account/Login.cshtml]
+[C:/Users/joperez/OneDrive - Neumont College of Computer Science/Desktop/CharacterCreator/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Neumont/NeuQ6/WebProj/Web/Views/Character/CreatorPage.cshtml]
+[C:/Users/joperez/OneDrive - Neumont College of Computer Science/Desktop/CharacterCreator/Views/Character/CharacterDisplayer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcmFjdGVyXENoYXJhY3RlckRpc3BsYXllci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joperez/OneDrive - Neumont College of Computer Science/Desktop/CharacterCreator/Views/Character/CreatorPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcmFjdGVyXENyZWF0b3JQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Neumont/NeuQ6/WebProj/Web/Views/Home/Index.cshtml]
+[C:/Users/joperez/OneDrive - Neumont College of Computer Science/Desktop/CharacterCreator/Views/Character/CreatorPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcmFjdGVyXENyZWF0b3JQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joperez/OneDrive - Neumont College of Computer Science/Desktop/CharacterCreator/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Neumont/NeuQ6/WebProj/Web/Views/Home/Privacy.cshtml]
+[C:/Users/joperez/OneDrive - Neumont College of Computer Science/Desktop/CharacterCreator/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Neumont/NeuQ6/WebProj/Web/Views/Shared/Error.cshtml]
+[C:/Users/joperez/OneDrive - Neumont College of Computer Science/Desktop/CharacterCreator/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Neumont/NeuQ6/WebProj/Web/Views/Shared/_Layout2.cshtml]
+[C:/Users/joperez/OneDrive - Neumont College of Computer Science/Desktop/CharacterCreator/Views/Shared/_Layout2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Neumont/NeuQ6/WebProj/Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/joperez/OneDrive - Neumont College of Computer Science/Desktop/CharacterCreator/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Neumont/NeuQ6/WebProj/Web/Views/_ViewImports.cshtml]
+[C:/Users/joperez/OneDrive - Neumont College of Computer Science/Desktop/CharacterCreator/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Neumont/NeuQ6/WebProj/Web/Views/_ViewStart.cshtml]
+[C:/Users/joperez/OneDrive - Neumont College of Computer Science/Desktop/CharacterCreator/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Neumont/NeuQ6/WebProj/Web/Views/Shared/_Layout.cshtml]
+[C:/Users/joperez/OneDrive - Neumont College of Computer Science/Desktop/CharacterCreator/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-l76vewrzmh
