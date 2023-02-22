@@ -9,11 +9,25 @@ namespace CharacterCreator.Controllers
 		}
 
 		[HttpGet]
+		public IActionResult Login() {
+			return View();
+		}
+
+		// These paramaters are the old way of saving, once we get connected to a database this method can be updated to save to a DB
+		[HttpPost]
+		public IActionResult Login(string Username, string Password) {
+			if (ModelState.IsValid) {
+				TempData["LoggedIn"] = "Successfully logged in";
+			}
+			return View();
+		}
+
+		[HttpGet]
 		public IActionResult CreateAccount() {
 			return View();
 		}
 
-		// These paramaters are the old way of doing it, once we get connected to a database I or someone else can update them and the method itself
+		// These paramaters are the old way of saving, once we get connected to a database this method can be updated to save to a DB
 		[HttpPost]
 		public IActionResult CreateAccount(string Username, string Password) {
 			if (ModelState.IsValid) {

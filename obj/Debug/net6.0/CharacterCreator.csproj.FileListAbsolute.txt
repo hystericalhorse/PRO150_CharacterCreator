@@ -29,37 +29,6 @@ C:\Users\edixon\C# Projects\PRO150\CharacterCreator\obj\Debug\net6.0\refint\Char
 C:\Users\edixon\C# Projects\PRO150\CharacterCreator\obj\Debug\net6.0\CharacterCreator.pdb
 C:\Users\edixon\C# Projects\PRO150\CharacterCreator\obj\Debug\net6.0\CharacterCreator.genruntimeconfig.cache
 C:\Users\edixon\C# Projects\PRO150\CharacterCreator\obj\Debug\net6.0\ref\CharacterCreator.dll
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\appsettings.json
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\CharacterCreator.staticwebassets.runtime.json
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\CharacterCreator.exe
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\CharacterCreator.deps.json
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\CharacterCreator.runtimeconfig.json
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\CharacterCreator.dll
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\CharacterCreator.pdb
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.csproj.AssemblyReference.cache
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.AssemblyInfoInputs.cache
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.AssemblyInfo.cs
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.csproj.CoreCompileInputs.cache
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.RazorAssemblyInfo.cache
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.RazorAssemblyInfo.cs
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\staticwebassets\msbuild.CharacterCreator.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\staticwebassets\msbuild.build.CharacterCreator.props
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CharacterCreator.props
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CharacterCreator.props
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\scopedcss\bundle\CharacterCreator.styles.css
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\scopedcss\projectbundle\CharacterCreator.bundle.scp.css
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.dll
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\refint\CharacterCreator.dll
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.pdb
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.genruntimeconfig.cache
-C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\ref\CharacterCreator.dll
 C:\Users\joperez\OneDrive - Neumont College of Computer Science\Desktop\CharacterCreator\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\joperez\OneDrive - Neumont College of Computer Science\Desktop\CharacterCreator\bin\Debug\net6.0\appsettings.json
 C:\Users\joperez\OneDrive - Neumont College of Computer Science\Desktop\CharacterCreator\bin\Debug\net6.0\CharacterCreator.staticwebassets.runtime.json
@@ -126,3 +95,36 @@ C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\CharacterCreator.genruntimeconfig.
 C:\Neumont\NeuQ6\WebProj\Web\obj\Debug\net6.0\ref\CharacterCreator.dll
 C:\Users\joperez\OneDrive - Neumont College of Computer Science\Desktop\CharacterCreator\bin\Debug\net6.0\RestSharp.dll
 C:\Users\joperez\OneDrive - Neumont College of Computer Science\Desktop\CharacterCreator\obj\Debug\net6.0\CharacterCreator.csproj.CopyComplete
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\appsettings.json
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\CharacterCreator.staticwebassets.runtime.json
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\CharacterCreator.exe
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\CharacterCreator.deps.json
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\CharacterCreator.runtimeconfig.json
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\CharacterCreator.dll
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\CharacterCreator.pdb
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\bin\Debug\net6.0\RestSharp.dll
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.csproj.AssemblyReference.cache
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.AssemblyInfoInputs.cache
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.AssemblyInfo.cs
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.csproj.CoreCompileInputs.cache
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.RazorAssemblyInfo.cache
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.RazorAssemblyInfo.cs
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\staticwebassets\msbuild.CharacterCreator.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\staticwebassets\msbuild.build.CharacterCreator.props
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CharacterCreator.props
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CharacterCreator.props
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\scopedcss\bundle\CharacterCreator.styles.css
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\scopedcss\projectbundle\CharacterCreator.bundle.scp.css
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.csproj.CopyComplete
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.dll
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\refint\CharacterCreator.dll
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.pdb
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\CharacterCreator.genruntimeconfig.cache
+C:\Users\Joshua\OneDrive\Second Year\Winter\Web Projects\PRO150_CharacterCreator\obj\Debug\net6.0\ref\CharacterCreator.dll
