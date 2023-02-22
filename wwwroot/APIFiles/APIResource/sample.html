@@ -1,171 +1,79 @@
 ﻿<!DOCTYPE html>
 <html class="bg">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-    <style>
-        .topSpace{
-            margin-top: 6px;
-        }
-        .nameBox {
-            width: 225px;
-            height: 50px;
-            border: solid;
-            border-color: black;
-            margin-right: 10px;
-            margin-left: 80px;
-        }
-        .nameText {
-            margin-left: 5px;
-        }
-        .noBorder{
-            border: hidden;
-        }
-        .ageInput{
-            width: 40px;
-        }
-        .ageBox {
-            width: 100px;
-            height: 50px;
-            border: solid;
-            border-color: black;
-            margin-right: 10px;
-        }
-        .genderInput {
-            width: 70px;
-        }
-        .genderBox {
-            width: 170px;
-            height: 50px;
-            border: solid;
-            border-color: black;
-            margin-right: 10px;
-        }
-
-
-
-        .smallBox {
-            width: 150px;
-            height: 200px;
-            border: solid;
-            border-color: black;
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-
-        .skillBox {
-            width: 100px;
-            height: 415px;
-            border: solid;
-            border-color: black;
-            margin-bottom: 10px;
-        }
-
-        .inventoryBox {
-            width: 300px;
-            height: 250px;
-            border: solid;
-            border-color: black;
-            margin-right: 2px;
-            margin-top: 5px;
-        }
-
-        .qualitiesBox {
-            width: 110px;
-            height: 250px;
-            border: solid;
-            border-color: black;
-        }
-        
-        .backStoryBox {
-            width: 680px;
-            height: 120px;
-            border: solid;
-            border-color: black;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        .inline {
-            display: inline-block;
-        }
-        .bg {
-            background-color: antiquewhite;
-        }
-        .bgDark{
-            background-color: linen;
-        }
-    </style>
+<head><meta charset="utf-8" /><title></title>
 </head>
-<body>
-    <div class="" style="border: solid; width: 710px;">
+<body class="bodySpace">
+    <div class="bodySpace">
         <div class="inline topSpace">
             <div class="inline">
                 <div class="nameBox inline">
                     <div>
                         <p class="inline nameText">Name: </p>
-                        <input type="text" class="inline noBorder bg" />
+                        <p type="text" class="inline borderLow bg"></p>
                     </div>
                 </div>
                 <div class="ageBox inline">
                     <div>
                         <p class="inline nameText">Age: </p>
-                        <input type="number" class="inline noBorder bg ageInput" value="69"/>
+                        <p type="number" class="inline noBorder borderLow bg ageInput" > </p>
                     </div>
                 </div>
                 <div class="genderBox inline">
                     <div>
                         <p class="inline nameText">Gender: </p>
-                        <input type="text" class="inline noBorder bg genderInput" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <br />
-        </div>
-        <div>
-            <div style="display: inline-block">
-                <div class="smallBox">
-
-                </div>
-                <div class="smallBox">
-
-                </div>
-            </div>
-            <div style="display: inline-block">
-                <div class="smallBox">
-
-                </div>
-                <div class="smallBox">
-
-                </div>
-            </div>
-            <div style="display: inline-block">
-                <div class="skillBox">
-
-                </div>
-            </div>
-        </div>
-        <div>
-            <div style="display: inline-block; margin-top: 5px;">
-                <div style="display: inline-block;">
-                    <div class="inventoryBox">
-
-                    </div>
-                </div>
-                <div style="display: inline-block;">
-                    <div class="qualitiesBox">
+                        <p type="text" class="inline noBorder borderLow bg genderInput"> </p>
                     </div>
                 </div>
             </div>
         </div>
         <br />
-        <div>
-            <div class="backStoryBox">
-
+        <div class="inline marginL20">
+            <div class="inline marginL20">
+                <div class="initBox" >
+                    <div style="height: 30px;">
+                        <p class="borderLow boxText">Initiative</p>
+                    </div>
+                    <div class="borderLow marginL5">
+                        <p class="inline">1.</p>
+                        <input class="inline bg initInput" />
+                    </div>
+                    <div class="borderLow marginL5">
+                        <p class="inline">2.</p>
+                        <input class="inline bg initInput" />
+                    </div>
+                    <div class="borderLow marginL5">
+                        <p class="inline">3.</p>
+                        <input class="inline bg initInput" />
+                    </div>
+                    <div class="borderLow marginL5">
+                        <p class="inline">3.</p>
+                        <input class="inline bg initInput" />
+                    </div>
+                </div>
+                <div class="equipmintBox">
+                    <p class="centerText height30 borderLow">Equipment</p>
+                    <p></p>
+                </div>
+                <span class="inline">
+                </span>
             </div>
-        </div>
-        <br />
-    </div>
-</body>
-</html>
+            <div class="inline marginL20">
+                <div class="initBox" >
+                    <p class="borderLow boxText">Filler</p>
+                </div>
+                <div class="equipmintBox">
+                    <p class="centerText height30 borderLow">Weapons</p>
+                    <p></p>
+                </div><span class="inline"></span></div>
+            <div class="inline"><div class="skillBox marginL20"><p class="centerText height30 borderLow">Skill</p>
+                    <p></p>
+                </div><br /></div></div>
+        <div class="marginL20"><div class="marginL20"><div class="inline"><div class="inventoryBox"><p class="centerText height30 borderLow">Notes</p>
+                        <p></p>
+                    </div></div>
+                <div class="inline"><div class="qualitiesBox"><p class="centerText height30 borderLow">Qualities</p>
+                        <p></p>
+                    </div></div></div></div><br />
+        <div><div class="backStoryBox"><p class="centerText height30 borderLow">Backstory</p>
+                <p></p>
+            </div></div><br /></div></body></html>
