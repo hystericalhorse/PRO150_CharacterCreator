@@ -21,5 +21,21 @@ namespace CharacterCreator.Controllers
 			}
 			return View();
 		}
+
+		[HttpGet]
+		public IActionResult Profile() { // Loads the profile page
+			return View();
+		}
+
+		// Updates the profile page with the new values
+		[HttpPost]
+		public IActionResult Profile(string Bio, string Username, string Email, string Password) { // Once we get a database we can send in an account object to update
+			TempData["Success"] = "Profile updated";
+			ViewBag.Username = Username;
+			ViewBag.Bio = Bio;
+			ViewBag.Email = Email;
+			ViewBag.Password = Password;
+			return View();
+		}
 	}
 }

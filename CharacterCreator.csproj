@@ -14,12 +14,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\APIfiles\APIOutput\" />
-    <Folder Include="wwwroot\APIfiles\APIResources\" />
+    <PackageReference Include="RestSharp" Version="106.15.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="RestSharp" Version="106.15.0" />
+    <Folder Include="wwwroot\APIFiles\APIOutput\" />
   </ItemGroup>
 
 </Project>

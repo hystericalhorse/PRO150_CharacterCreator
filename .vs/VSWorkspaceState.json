@@ -3,7 +3,6 @@
     "",
     "\\Controllers",
     "\\Models",
-    "\\obj",
     "\\Properties",
     "\\Views",
     "\\Views\\Account",
