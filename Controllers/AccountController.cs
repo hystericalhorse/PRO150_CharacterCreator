@@ -1,9 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CharacterCreator.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CharacterCreator.Controllers
 {
-	public class AccountController : Controller
-	{
+	public class AccountController : Controller {
+		IDataAccessLayer DAL;
+		public AccountController(IDataAccessLayer indal) {
+			DAL = indal;
+		}
+
 		public IActionResult Index() {
 			return View();
 		}
