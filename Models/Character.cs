@@ -1,8 +1,11 @@
-﻿namespace CharacterCreator.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CharacterCreator.Models
 {
     public class Character
     {
-        public int ID { get; set; }
+        [Key]
+        public int CharacterID { get; set; }
 
         public string Name { get; set; } = string.Empty;
 

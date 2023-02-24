@@ -1,8 +1,13 @@
-﻿namespace CharacterCreator.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CharacterCreator.Models
 {
     public class SkillObject
     {
-        public SkillObject() { }
+		[Key]
+		public int SkillID { get; set; }
+
+		public SkillObject() { }
         public SkillObject(string name, string description)
         {
             SkillName = name;
