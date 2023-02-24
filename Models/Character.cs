@@ -17,6 +17,6 @@
         public QualityObject Quality { get; set; } = new QualityObject();
 
         public List<SkillObject> CharacterSkills { get; set; } = new List<SkillObject>();
-        public List<SkillObject> CTempSkills { get; set; } = new List<SkillObject>();
+        public List<SkillObject> TempSkills { get; set; } = new List<SkillObject>();
     }
 }

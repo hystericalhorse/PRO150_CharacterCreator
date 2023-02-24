@@ -1,0 +1,9 @@
+input:checked, .highlight-checked {
+    background-color: white;
+}
+
+input:checked {
+    color: aqua;
+    background-color: aqua;
+    border-color: aliceblue;
+}
