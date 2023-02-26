@@ -1,15 +1,20 @@
-﻿namespace CharacterCreator.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CharacterCreator.Models
 {
-    public class AttributeObject
-    {
-        public enum AttributeScore
-        {
-            NEUTRAL, STRONG, WEAK
-        }
+	public class AttributeObject
+	{
+		[Key]
+		public int AttributeID { get; set; }
 
-        public string AttributeName { get; set; } = string.Empty;
+		public enum AttributeScore
+		{
+			NEUTRAL, STRONG, WEAK
+		}
 
-        public AttributeScore Score { get; set; } = AttributeScore.NEUTRAL;
-        public int AttributeBonus { get; set; } = 0;
-    }
+		public string AttributeName { get; set; } = string.Empty;
+
+		public AttributeScore Score { get; set; } = AttributeScore.NEUTRAL;
+		public int AttributeBonus { get; set; } = 0;
+	}
 }
