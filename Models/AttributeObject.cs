@@ -2,19 +2,19 @@
 
 namespace CharacterCreator.Models
 {
-	public class AttributeObject
-	{
+    public class AttributeObject
+    {
 		[Key]
 		public int AttributeID { get; set; }
 
 		public enum AttributeScore
-		{
-			NEUTRAL, STRONG, WEAK
-		}
+        {
+            NEUTRAL, STRONG, WEAK
+        }
 
-		public string AttributeName { get; set; } = string.Empty;
+        public string AttributeName { get; set; } = string.Empty;
 
-		public AttributeScore Score { get; set; } = AttributeScore.NEUTRAL;
-		public int AttributeBonus { get; set; } = 0;
-	}
+        public AttributeScore Score { get; set; } = AttributeScore.NEUTRAL;
+        public int AttributeBonus { get; set; } = 0;
+    }
 }
