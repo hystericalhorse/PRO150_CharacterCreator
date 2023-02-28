@@ -15,5 +15,15 @@ namespace CharacterCreator.Controllers
         {
             return View("EditAttributesPartial");
         }
+
+        public IActionResult CharacterAttribute()
+        {
+            return View();
+        }
+
+        public IActionResult CharacterStats()
+        {
+            return View();
+        }
     }
 }
