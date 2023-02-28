@@ -1,0 +1,3 @@
+input:checked, .highlight-checked {
+    background-color: white;
+}

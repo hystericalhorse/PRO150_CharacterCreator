@@ -1,8 +1,13 @@
-﻿namespace CharacterCreator.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CharacterCreator.Models
 {
     public class AttributeObject
     {
-        public enum AttributeScore
+		[Key]
+		public int AttributeID { get; set; }
+
+		public enum AttributeScore
         {
             NEUTRAL, STRONG, WEAK
         }

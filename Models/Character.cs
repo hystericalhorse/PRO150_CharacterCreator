@@ -1,8 +1,11 @@
-﻿namespace CharacterCreator.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CharacterCreator.Models
 {
     public class Character
     {
-        public int ID { get; set; }
+        [Key]
+        public int CharacterID { get; set; }
 
         public string Name { get; set; } = string.Empty;
 
@@ -17,6 +20,6 @@
         public QualityObject Quality { get; set; } = new QualityObject();
 
         public List<SkillObject> CharacterSkills { get; set; } = new List<SkillObject>();
-        public List<SkillObject> CTempSkills { get; set; } = new List<SkillObject>();
+        public List<SkillObject> TempSkills { get; set; } = new List<SkillObject>();
     }
 }
