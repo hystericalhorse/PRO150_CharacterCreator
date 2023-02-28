@@ -1,4 +1,5 @@
 ﻿using CharacterCreator.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CharacterCreator.Controllers
@@ -41,12 +42,14 @@ namespace CharacterCreator.Controllers
 			return View();
 		}
 
+		[Authorize]
 		[HttpGet]
 		public IActionResult Profile() { // Loads the profile page
 			return View();
 		}
 
 		// Updates the profile page with the new values
+		[Authorize]
 		[HttpPost]
 		public IActionResult Profile(string Bio, string Username, string Email, string Password) { // Once we get a database we can send in an account object to update
 			TempData["Success"] = "Profile updated";
