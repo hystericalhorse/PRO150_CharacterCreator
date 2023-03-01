@@ -1,7 +1,6 @@
-﻿@model IEnumerable<Character>
+﻿@model Character
 
 
-@Html.Partial("EditAttributesPartial")
 
 <div class="container px-4 text-center">
     <div class="row gx-5">
@@ -10,13 +9,10 @@
             </div>
         </div>
         <div class="col">
-            <div class="p-3">
-                <a class="nav-link" asp-controller="Character" asp-action="CharacterStats">
-                    <button type="button" asp-area="" asp-controller="Character" asp-action="CharacterStats">
-                        Next
-                    </button>
-                </a>
-            </div>
+            <form class="p-3" method="post">
+                <partial name="EditAttributesPartial.cshtml" for="@Model"/>
+                <button asp-area="" asp-controller="Character" asp-action="EditAttributes">Next</button>
+            </form>
         </div>
         <div class="col">
             <div class="p-3">
