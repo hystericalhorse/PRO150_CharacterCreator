@@ -38,9 +38,9 @@ namespace CharacterCreator.Data {
 			return DB.Accounts.Where(a => a.ID == id).FirstOrDefault();
 		}
 
-		public Accounts getAccount(string Username)
+		public Accounts getAccount(string Title)
 		{
-			return (Accounts)DB.Accounts.Where(c => c.Username.ToLower().Contains(Username.ToLower()));
+			return (Accounts)DB.Accounts.Where(c => c.Title.ToLower().Contains(Title.ToLower()));
 		}
 
 		public IEnumerable<Accounts> getAccounts()

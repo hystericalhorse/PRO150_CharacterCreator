@@ -1,0 +1,35 @@
+﻿@model Accounts
+
+<h4>@TempData["Success"]</h4>
+<form method="post" asp-controller="Account" asp-action="CreateProfile">
+    <div class="text-center">
+        <div>
+            <h1><b>Profile/Presets Page</b></h1>
+            <h3><b>Here you can view and edit your profiles/presets which store information such as specific character sets</b></h3>
+            <h3><b>You will be able to add characters to a profile after it is created</b></h3>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <h3><b><label asp-for="Title"></label></b></h3>
+            <h4>Give this profile a name</h4>
+            <input asp-for="Title" class="form-control m-auto" style="width: 400px;" />
+            <hr />
+        </div>
+        <div class="mb-3">
+            <h3><b><label asp-for="Description"></label></b></h3>
+            <h4>Write a short description for this profile</h4>
+            <input asp-for="Description" class="form-control m-auto" style="width: 400px;" />
+            <hr />
+        </div>
+
+        <div class="mb-3">
+            <h3><b><label asp-for="Image"></label></b></h3>
+            <h4>URL for an image to represent this profile</h4>
+            <input asp-for="Image" class="form-control m-auto" style="width: 400px;" />
+            <hr />
+        </div>
+        <button type="submit" class="btn btn-primary">
+            <i class="bi bi-arrow-down-circle"></i> Create profile
+        </button>
+    </div>
+</form>

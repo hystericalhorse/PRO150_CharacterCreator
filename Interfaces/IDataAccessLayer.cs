@@ -3,7 +3,7 @@ namespace CharacterCreator.Interfaces {
 	public interface IDataAccessLayer {
 
 		public Accounts getAccount(int id);
-		public Accounts getAccount(string Username);
+		public Accounts getAccount(string Title);
 		public IEnumerable<Accounts> getAccounts();
 		public void editAccount(Accounts account);
 		public void addAccount(Accounts account);

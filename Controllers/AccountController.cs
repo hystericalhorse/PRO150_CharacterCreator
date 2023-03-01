@@ -1,6 +1,9 @@
 ﻿using CharacterCreator.Interfaces;
+using CharacterCreator.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using NuGet.LibraryModel;
+using System.Security.Claims;
 
 namespace CharacterCreator.Controllers
 {
@@ -14,44 +17,67 @@ namespace CharacterCreator.Controllers
 			return View();
 		}
 
+        public IActionResult Delete(int ID) {
+            if (DAL.getAccount(ID) == null) {
+                ModelState.AddModelError("Title", "Profile not found for destruction.");
+            }
+
+            if (ModelState.IsValid) {
+                DAL.deleteAccount(ID);
+                TempData["Success"] = "Profile deleted";
+            }
+            return RedirectToAction("Profiles", "Account");
+        }
+
+        [Authorize]
 		[HttpGet]
-		public IActionResult Login() {
-			return View();
-		}
-
-		// These paramaters are the old way of saving, once we get connected to a database this method can be updated to save to a DB
-		[HttpPost]
-		public IActionResult Login(string Username, string Password) {
-			if (ModelState.IsValid) {
-				TempData["LoggedIn"] = "Successfully logged in";
-			}
-			return View();
-		}
-
-		[HttpGet]
-		public IActionResult CreateAccount() {
-			return View();
-		}
-
-		// These paramaters are the old way of saving, once we get connected to a database this method can be updated to save to a DB
-		[HttpPost]
-		public IActionResult CreateAccount(string Username, string Password) {
-			if (ModelState.IsValid) {
-				TempData["Success"] = "Account Created";
-			}
+		public IActionResult CreateProfile() {
 			return View();
 		}
 
 		[Authorize]
-		[HttpGet]
-		public IActionResult Profile() { // Loads the profile page
+		[HttpPost]
+		public IActionResult CreateProfile(Accounts Account) {
+			if (ModelState.IsValid) {
+				Account.UserID = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                DAL.addAccount(Account);
+				TempData["Success"] = "Profile Added!";
+				return RedirectToAction("Profiles");
+			}
 			return View();
+		}
+
+        [Authorize]
+        [HttpGet]
+        public IActionResult EditProfile(int ID) {
+            if (ID == null) return NotFound();
+            Accounts FoundProfile = DAL.getAccount(ID);
+            if (FoundProfile == null) return NotFound();
+
+            return View(FoundProfile);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public IActionResult EditProfile(Accounts Account) {
+            if (ModelState.IsValid) {
+                DAL.editAccount(Account);
+                TempData["Success"] = Account.Title + " updated";
+                return RedirectToAction("Profiles", "Account");
+            }
+            return View();
+        }
+
+        [Authorize]
+		[HttpGet]
+		public IActionResult Profiles() { // Loads all the profiles
+			return View(DAL.getAccounts());
 		}
 
 		// Updates the profile page with the new values
 		[Authorize]
 		[HttpPost]
-		public IActionResult Profile(string Bio, string Username, string Email, string Password) { // Once we get a database we can send in an account object to update
+		public IActionResult Profiles(string Bio, string Username, string Email, string Password) { // Once we get a database we can send in an account object to update
 			TempData["Success"] = "Profile updated";
 			ViewBag.Username = Username;
 			ViewBag.Bio = Bio;
