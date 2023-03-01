@@ -1,5 +1,26 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<Character>
 
-<h3> YES! </h3>
+
+@Html.Partial("EditAttributesPartial")
+
+<div class="container px-4 text-center">
+    <div class="row gx-5">
+        <div class="col">
+            <div class="p-3">
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+                <a class="nav-link" asp-controller="Character" asp-action="CharacterStats">
+                    <button type="button" asp-area="" asp-controller="Character" asp-action="CharacterStats">
+                        Next
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3">
+            </div>
+        </div>
+    </div>
+</div>
