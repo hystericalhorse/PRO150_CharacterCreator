@@ -1,0 +1,23 @@
+﻿@model Character
+
+@if (Model != null)
+{
+<div class="container-fluid mt-2">
+	<div class="row">
+		<p class="display-3">@Model.Name</p><p class="ms-2 fs-5">@Model.Age</p><p class="ms-1 fs-5">@Model.Gender</p>
+	</div>
+	<div class="row">
+		<ul class="list-group list-group-flush">
+				@if (Model.brawnAtt.Score != AttributeObject.AttributeScore.NEUTRAL) {<li class="list-group-item text-success">@Model.brawnAtt.Score.ToString()</li>}
+				else if (Model.brawnAtt.Score == AttributeObject.AttributeScore.STRONG) {<li class="list-group-item text-danger">@Model.brawnAtt.Score.ToString()</li>}
+				else {<li class="list-group-item">@Model.brawnAtt.Score.ToString()</li>}
+		</ul>
+	</div>
+</div>
+}
+else
+{
+<div class="container-fluid mt-2 text-center">
+	<p class="h3">That's weird. There doesn't seem to be anything here!</p>
+</div>
+}

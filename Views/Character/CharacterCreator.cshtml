@@ -1,0 +1,20 @@
+﻿@model Character
+
+@if (Model != null)
+{
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" asp-area="" asp-controller="Character" asp-action="CreatorPage">Character Details</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Attribute</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Stats</a>
+  </li>
+</ul>
+}
+else
+{
+
+}

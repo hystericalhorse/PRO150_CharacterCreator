@@ -74,7 +74,7 @@ namespace CharacterCreator.Controllers
 				}
 			}
 
-			return View("CharacterStats", ch);
+			return View("CharacterSheetPartial", ch);
 		}
 
 		public IActionResult CharacterAttribute()
@@ -85,6 +85,13 @@ namespace CharacterCreator.Controllers
 		public IActionResult CharacterStats()
         {
             return View();
+        }
+
+        [Route("character_sheet/{id?}")]
+        public IActionResult CharacterSheet(int? id)
+        {
+            
+            return View("CharacterSheetPartial", ch);
         }
     }
 }
