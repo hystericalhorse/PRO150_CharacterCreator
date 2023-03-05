@@ -36,41 +36,41 @@ namespace CharacterCreator.Controllers
 			}
             else
             {
-                ch.brawnAtt.Score       = 0;
-                ch.finesseAtt.Score     = 0;
-                ch.toughAtt.Score       = 0;
-                ch.intellectAtt.Score   = 0;
-                ch.personAtt.Score      = 0;
-                ch.acuityAtt.Score      = 0;
+                ch.brawnAtt       = 0;
+                ch.finesseAtt     = 0;
+                ch.toughAtt       = 0;
+                ch.intellectAtt   = 0;
+                ch.personAtt      = 0;
+                ch.acuityAtt      = 0;
 
                 switch (btnradio0)
                 {
-                    case "Brawn":       ch.brawnAtt.Score = (AttributeObject.AttributeScore) 1; break;
-                    case "Finesse":     ch.finesseAtt.Score = (AttributeObject.AttributeScore) 1; break;
-                    case "Toughness":   ch.toughAtt.Score = (AttributeObject.AttributeScore) 1; break;
-                    case "Intellect":   ch.intellectAtt.Score = (AttributeObject.AttributeScore) 1; break;
-                    case "Personality": ch.personAtt.Score = (AttributeObject.AttributeScore) 1; break;
-                    case "Acuity":      ch.acuityAtt.Score = (AttributeObject.AttributeScore) 1; break;
+                    case "Brawn":       ch.brawnAtt     = (AttributeScore) 1; break;
+                    case "Finesse":     ch.finesseAtt   = (AttributeScore) 1; break;
+                    case "Toughness":   ch.toughAtt     = (AttributeScore) 1; break;
+                    case "Intellect":   ch.intellectAtt = (AttributeScore) 1; break;
+                    case "Personality": ch.personAtt    = (AttributeScore) 1; break;
+                    case "Acuity":      ch.acuityAtt    = (AttributeScore) 1; break;
                 }
 
 				switch (btnradio1)
 				{
-					case "Brawn":       ch.brawnAtt.Score = (AttributeObject.AttributeScore)1; break;
-					case "Finesse":     ch.finesseAtt.Score = (AttributeObject.AttributeScore)1; break;
-					case "Toughness":   ch.toughAtt.Score = (AttributeObject.AttributeScore)1; break;
-					case "Intellect":   ch.intellectAtt.Score = (AttributeObject.AttributeScore)1; break;
-					case "Personality": ch.personAtt.Score = (AttributeObject.AttributeScore)1; break;
-					case "Acuity":      ch.acuityAtt.Score = (AttributeObject.AttributeScore)1; break;
+					case "Brawn":       ch.brawnAtt     = (AttributeScore) 1; break;
+					case "Finesse":     ch.finesseAtt   = (AttributeScore) 1; break;
+					case "Toughness":   ch.toughAtt     = (AttributeScore) 1; break;
+					case "Intellect":   ch.intellectAtt = (AttributeScore) 1; break;
+					case "Personality": ch.personAtt    = (AttributeScore) 1; break;
+					case "Acuity":      ch.acuityAtt    = (AttributeScore) 1; break;
 				}
 
 				switch (btnradio2)
 				{
-					case "Brawn":       ch.brawnAtt.Score = (AttributeObject.AttributeScore) 2; break;
-					case "Finesse":     ch.finesseAtt.Score = (AttributeObject.AttributeScore) 2; break;
-					case "Toughness":   ch.toughAtt.Score = (AttributeObject.AttributeScore) 2; break;
-					case "Intellect":   ch.intellectAtt.Score = (AttributeObject.AttributeScore) 2; break;
-					case "Personality": ch.personAtt.Score = (AttributeObject.AttributeScore) 2; break;
-					case "Acuity":      ch.acuityAtt.Score = (AttributeObject.AttributeScore) 2; break;
+					case "Brawn":       ch.brawnAtt     = (AttributeScore) 2; break;
+					case "Finesse":     ch.finesseAtt   = (AttributeScore) 2; break;
+					case "Toughness":   ch.toughAtt     = (AttributeScore) 2; break;
+					case "Intellect":   ch.intellectAtt = (AttributeScore) 2; break;
+					case "Personality": ch.personAtt    = (AttributeScore) 2; break;
+					case "Acuity":      ch.acuityAtt    = (AttributeScore) 2; break;
 				}
 			}
 
@@ -81,6 +81,8 @@ namespace CharacterCreator.Controllers
         {
             return View(ch);
         }
+
+        public IActionResult CharacterCreator() => View(ch);
 
 		public IActionResult CharacterStats()
         {

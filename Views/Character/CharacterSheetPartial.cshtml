@@ -8,9 +8,48 @@
 	</div>
 	<div class="row">
 		<ul class="list-group list-group-flush">
-				@if (Model.brawnAtt.Score != AttributeObject.AttributeScore.NEUTRAL) {<li class="list-group-item text-success">@Model.brawnAtt.Score.ToString()</li>}
-				else if (Model.brawnAtt.Score == AttributeObject.AttributeScore.STRONG) {<li class="list-group-item text-danger">@Model.brawnAtt.Score.ToString()</li>}
-				else {<li class="list-group-item">@Model.brawnAtt.Score.ToString()</li>}
+			@switch (Model.brawnAtt)
+			{
+			default:
+			case AttributeScore.Neutral: { <li class="list-group-item">Brawn: @Model.brawnAtt.ToString()</li> break; }
+			case AttributeScore.Strong: { <li class="list-group-item text-success">Brawn: @Model.brawnAtt.ToString()</li> break; }
+			case AttributeScore.Weak: { <li class="list-group-item text-danger">Brawn: @Model.brawnAtt.ToString()</li> break; }
+			}
+			@switch (Model.finesseAtt)
+			{
+			default:
+			case AttributeScore.Neutral: { <li class="list-group-item">Finesse: @Model.finesseAtt.ToString()</li> break; }
+			case AttributeScore.Strong: { <li class="list-group-item text-success">Finesse: @Model.finesseAtt.ToString()</li> break; }
+			case AttributeScore.Weak: { <li class="list-group-item text-danger">Finesse: @Model.finesseAtt.ToString()</li> break; }
+			}
+			@switch (Model.toughAtt)
+			{
+			default:
+			case AttributeScore.Neutral: { <li class="list-group-item">Toughness: @Model.toughAtt.ToString()</li> break; }
+			case AttributeScore.Strong: { <li class="list-group-item text-success">Toughness: @Model.toughAtt.ToString()</li> break; }
+			case AttributeScore.Weak: { <li class="list-group-item text-danger">Toughness: @Model.toughAtt.ToString()</li> break; }
+			}
+			@switch (Model.intellectAtt)
+			{
+			default:
+			case AttributeScore.Neutral: { <li class="list-group-item">Intellect: @Model.intellectAtt.ToString()</li> break; }
+			case AttributeScore.Strong: { <li class="list-group-item text-success">Intellect: @Model.intellectAtt.ToString()</li> break; }
+			case AttributeScore.Weak: { <li class="list-group-item text-danger">Intellect: @Model.intellectAtt.ToString()</li> break; }
+			}
+			@switch (Model.personAtt)
+			{
+			default:
+			case AttributeScore.Neutral: { <li class="list-group-item">Personality: @Model.personAtt.ToString()</li> break; }
+			case AttributeScore.Strong: { <li class="list-group-item text-success">Personality: @Model.personAtt.ToString()</li> break; }
+			case AttributeScore.Weak: { <li class="list-group-item text-danger">Personality: @Model.personAtt.ToString()</li> break; }
+			}
+			@switch (Model.acuityAtt)
+			{
+			default:
+			case AttributeScore.Neutral: { <li class="list-group-item">Acuity: @Model.acuityAtt.ToString()</li> break; }
+			case AttributeScore.Strong: { <li class="list-group-item text-success">Acuity: @Model.acuityAtt.ToString()</li> break; }
+			case AttributeScore.Weak: { <li class="list-group-item text-danger">Acuity: @Model.acuityAtt.ToString()</li> break; }
+			}
 		</ul>
 	</div>
 </div>

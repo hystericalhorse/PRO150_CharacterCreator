@@ -11,7 +11,7 @@ namespace CharacterCreator.Models
 		[Required]
         public int PlayerID { get; set; }
 		[Required]
-		public string Name { get; set; } = string.Empty;
+		public string Name { get; set; } = "Unnamed Character";
 
         public uint Age { get; set; }
 
@@ -22,17 +22,23 @@ namespace CharacterCreator.Models
 		public uint FatePoints { get; set; } = 1;
 
 		[Required]
-		public AttributeObject brawnAtt { get; set; } = new("Brawn");
+		public AttributeScore brawnAtt { get; set; } = 0;
+		public int brawnBonus { get; set; } = 0;
 		[Required]
-		public AttributeObject finesseAtt { get; set; } = new("Finesse");
+		public AttributeScore finesseAtt { get; set; } = 0;
+		public int finesseBonus { get; set; } = 0;
 		[Required]
-		public AttributeObject toughAtt { get; set; } = new("Toughness");
+		public AttributeScore toughAtt { get; set; } = 0;
+		public int toughBonus { get; set; } = 0;
 		[Required]
-		public AttributeObject intellectAtt { get; set; } = new("Intellect");
+		public AttributeScore intellectAtt { get; set; } = 0;
+		public int intellectBonus { get; set; } = 0;
 		[Required]
-		public AttributeObject personAtt { get; set; } = new("Personality");
+		public AttributeScore personAtt { get; set; } = 0;
+		public int personBonus { get; set; } = 0;
 		[Required]
-		public AttributeObject acuityAtt { get; set; } = new("Acuity");
+		public AttributeScore acuityAtt { get; set; } = 0;
+		public int acuityBonus { get; set; } = 0;
 
 		[Required]
 		public QualityObject Quality { get; set; } = new QualityObject();
@@ -40,4 +46,7 @@ namespace CharacterCreator.Models
         public List<SkillObject> CharacterSkills { get; set; } = new List<SkillObject>();
         public List<SkillObject> TempSkills { get; set; } = new List<SkillObject>();
     }
+
+	public enum AttributeScore { Neutral = 0, Strong = 1, Weak = 2 }
+
 }
