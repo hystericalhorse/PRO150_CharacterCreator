@@ -9,11 +9,12 @@
 			return false;
 		}
 
-		public static bool AnyNull(string x, string y, string z)
+		public static bool AnyNull(string[] strings)
 		{
-			if (string.IsNullOrEmpty(x)) return true;
-			if (string.IsNullOrEmpty(y)) return true;
-			if (string.IsNullOrEmpty(z)) return true;
+			foreach (string s in strings)
+			{
+				if (string.IsNullOrEmpty(s)) return true;
+			}
 
 			return false;
 		}
