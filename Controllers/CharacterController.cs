@@ -14,26 +14,26 @@ namespace CharacterCreator.Controllers
             return View();
         }
 
-        [Route("editatt")]
+
         public IActionResult EditAttributes()
         {
-            
-            return View("EditAttributesPartial", ch);
+            return View("CharacterAttribute", ch);
         }
 
-		[Route("editatt"), HttpPost]
+		[HttpPost]
 		public IActionResult EditAttributes(string btnradio0, string btnradio1, string btnradio2)
 		{
             if (Utilities.AnyNull(btnradio2, btnradio1, btnradio0))
             {
 				TempData["ErrorDisplay"] = "You Must Select Two Strong Attributes and One Weak Attribute";
-				return View("EditAttributesPartial", ch);
+				return View("CharacterAttribute", ch);
 			}
 
             if (Utilities.AnyEqual(btnradio2, btnradio1, btnradio0))
             {
-                TempData["ErrorDisplay"] = "Do Select The Same Attribute Twice";
-            }
+                TempData["ErrorDisplay"] = "Don't Select The Same Attribute Twice";
+				return View("CharacterAttribute", ch);
+			}
             else
             {
                 ch.brawnAtt.Score       = 0;
@@ -74,17 +74,24 @@ namespace CharacterCreator.Controllers
 				}
 			}
 
-			return View("EditAttributesPartial", ch);
+			return View("CharacterSheetPartial", ch);
 		}
 
 		public IActionResult CharacterAttribute()
         {
-            return View();
+            return View(ch);
         }
 
 		public IActionResult CharacterStats()
         {
             return View();
+        }
+
+        [Route("character_sheet/{id?}")]
+        public IActionResult CharacterSheet(int? id)
+        {
+            
+            return View("CharacterSheetPartial", ch);
         }
     }
 }
