@@ -9,8 +9,9 @@ namespace CharacterCreator.Interfaces {
 		public void addAccount(Accounts account);
 		public void deleteAccount(int id);
 		public bool IsAccountLogin(string username, string password);
+        public IEnumerable<Accounts> GetMyAccounts(string ID);
 
-		public Character getCharacter(int id);
+        public Character getCharacter(int id);
 		public Character getCharacter(string name);
 		public IEnumerable<Character> getCharacters();
 		public void editCharacter(Character character);
