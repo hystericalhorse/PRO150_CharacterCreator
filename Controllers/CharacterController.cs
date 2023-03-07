@@ -73,7 +73,7 @@ namespace CharacterCreator.Controllers
 			return View("CharacterCreator", ch);
 		}
 
-		public IActionResult EditDetails(string name, string age, string gender, string bio, string bioSelect)
+		public IActionResult EditDetails(string name, string age, string gender, string bio, string bioselect)
 		{
 			TempData["sDet"] = "";
 			TempData["sAtt"] = "disabled";
@@ -90,6 +90,32 @@ namespace CharacterCreator.Controllers
 			ch.Name = name;
 			ch.Age = uint.Parse(age);
 			ch.Gender = gender;
+
+			if (bioselect != null)
+			{
+				switch (bioselect)
+				{
+					default: break;
+					case "0":
+						ch.Backstory = "You are a child of the old world. You left home at a young age in order to help others find their way in the new world.\n";
+						break;
+					case "1":
+						ch.Backstory = "You grew up in poverty in a shanty-town. You've gone into the wasteland to try and find work.\n";
+						break;
+					case "2":
+						ch.Backstory = "Your parents were murdered by bounty hunters, and you were spared. Now you scour the wasteland for their killers.\n";
+						break;
+					case "3":
+						ch.Backstory = "You saved your town from a gang of criminals, and now you're off looking for more adventure.\n";
+						break;
+					case "4":
+						ch.Backstory = "Life at home was boring, and you're sure there's more for you out there in the wasteland.\n";
+						break;
+
+				}
+			}
+
+			ch.Backstory += bio;
 
 			TempData["sAtt"] = "active";
 
