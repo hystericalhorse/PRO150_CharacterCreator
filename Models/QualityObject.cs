@@ -18,16 +18,8 @@ namespace CharacterCreator.Models
         public List<SkillObject> QualitySkills { get; set; } = new List<SkillObject>();
     }
 
-    public class AttributeQuality : QualityObject
-    {
-        public AttributeObject StrongAttribute { get; set; } = new AttributeObject();
-        public AttributeObject WeakAttribute { get; set; } = new AttributeObject();
-    }
+    // Qualities which modify attributes will have their own behavior defined within controllers and views.
 
-    public class LuckQuality : QualityObject
-    {
-        public bool NoLuck { get; set; } = false;
-        public int LuckModifier { get; set; } = 0;
-    }
+    // Qualities which modify variables like Fate will have their own behavior defined within controllers and views.
 
 }

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Accounts>
+
+<div class="text-center">
+    @{
+        ViewData["Title"] = "Welcome to your profiles";
+    }
+    <h1>@ViewData["Title"]</h1>
+    <h4>Use this page to view and edit your profiles.</h4>
+</div>
+
+<h4>@TempData["Success"]</h4>
+@if (Model == null || Model.Count() == 0) {
+    <div class="text-center">
+        <h2>No profiles found</h2>
+    </div>
+} else {
+    int Count = 0;
+    foreach (Accounts Account in Model) Count++;
+    <div class="text-center">
+        <h4>@Count profile(s) made for this login</h4>
+    </div>
+
+    foreach (Accounts Account in Model) {
+        <partial name="_ProfilesPartialView.cshtml" for="@Account" />
+    }
+}

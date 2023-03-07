@@ -1,7 +1,7 @@
 ﻿@model Character
 
 <div class="container mt-2 text-center">
-	@*<form method="post">*@
+	<form method="post">
 		<p class="h4">Select A Strong Attribute</p>
 		<div class="btn-group" role="group" aria-label="Select a strong attribute.">
 			<input type="radio" class="btn-check" name="btnradio0" autocomplete="off" id="bra0" value="Brawn">
@@ -48,17 +48,8 @@
 			<label class="btn btn-outline-warning" for="acu2">Acuity</label>
 		</div>
 		<br/>
-		@*<button class="mt-2" asp-area="" asp-controller="Character" asp-action="EditAttributes">Submit</button>*@
-	@*</form>*@
+		<button class="mt-2 btn btn-primary" asp-area="" asp-controller="Character" asp-action="EditAttributes">Next</button>
+	</form>
 	
 	<p class="text-danger">@TempData["ErrorDisplay"]</p>
-@if (Model != null)
-{
-	<p>Brawn @Model.brawnAtt.Score.ToString()</p>
-	<p>Finesse @Model.finesseAtt.Score.ToString()</p>
-	<p>Toughness @Model.toughAtt.Score.ToString()</p>
-	<p>Intellect @Model.intellectAtt.Score.ToString()</p>
-	<p>Personality @Model.personAtt.Score.ToString()</p>
-	<p>Acuity @Model.acuityAtt.Score.ToString()</p>
-}
 </div>

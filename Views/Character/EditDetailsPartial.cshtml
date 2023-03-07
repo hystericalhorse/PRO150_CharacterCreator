@@ -1,0 +1,44 @@
+﻿@model Character
+
+<div class="container mt-4 col-auto text-center">
+	<form class="text-center container-fluid" method="post">
+		<div class="row mb-1 text-center justify-content-center">
+			<label class="fs-5 col-1 align-self-center" for="name">Name:</label>
+			<input class="col-2" type="text" name="name" id="name" value="@Model.Name" placeholder="Name"/>
+		</div>
+		<div class="row mb-1 text-center justify-content-center">
+			<label class="fs-5 col-1 align-self-center" for="age">Age:</label>
+			<input class="col-1 text-center" type="number" name="age" id="age" value="@Model.Age" placeholder="Age"/>
+		</div>
+		<div class="row mb-1 text-center justify-content-center">
+			<label class="fs-5 col-1 align-self-center" for="gender">Gender:</label>
+			@if (string.IsNullOrEmpty(Model.Gender))
+			{
+			<input class="col-2 text-center" type="text" name="gender" id="gender" value="Non-Binary" placeholder="Gender"/>	
+			}
+			else
+			{
+			<input class="col-2 text-center" type="text" name="gender" id="gender" value="@Model.Gender" placeholder="Gender"/>
+			}
+		</div>
+		<div class="row mb-1 text-center justify-content-center input-group">
+			<label class="fs-5 col-1 align-self-center">Bio:</label>
+			<textarea class="col-2 text-center" id="bio" name="bio"></textarea>
+		</div>
+		<fieldset class="row text-center justify-content-center">
+			<div class="form-group">
+			    <label for="bioselect" class="fs-5 col-1">Preset Backstory:</label>
+			    <select multiple="" class="" id="bioselect" name="bioselect">
+					<option value="-1">--</option>
+			        <option value="0">Generic Good Backstory</option>
+			        <option value="1">Generic Unfortunate Backstory</option>
+			        <option value="2">Generic Sad Backstory</option>
+			        <option value="3">Generic Exciting Backstory</option>
+			        <option value="4">Generic Neutral Backstory</option>
+			    </select>
+			</div>
+        </fieldset>
+		<button class="row d-inline-flex mt-2 btn btn-primary" asp-area="" asp-controller="Character" asp-action="EditDetails">Next</button>
+	</form>
+	<p class="text-danger">@TempData["ErrorDisplay"]</p>
+</div>
