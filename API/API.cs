@@ -65,37 +65,43 @@ namespace CharacterCreator.API
 		private static void createHTMLBase(Character character)
 		{
 
+
+			// the lines will have to be different <p></p> each so they can start on a new line
 			string skills = "";
 			for (int i = 0; i > character.CharacterSkills.Count; i++)
 			{
-				skills += character.CharacterSkills[i].SkillName + " - " + character.CharacterSkills[i].SkillDescription + "\r";
+				skills += "<p class= \"font6\">"+character.CharacterSkills[i].SkillName + " - " + character.CharacterSkills[i].SkillDescription + "</p>\r";
+			}
+			for (int i = 0; i > character.TempSkills.Count; i++)
+			{
+				if (i == 0) skills += "<p class= \"font6\"> TempSkills </p>";
+				skills += "<p class= \"font6\">" + character.TempSkills[i].SkillName + " - " + character.CharacterSkills[i].SkillDescription + "</p>\r";
 			}
 			string qualities = "";
 			for (int i = 0; i > character.CharacterSkills.Count; i++)
 			{
-				skills += character.Quality.QualityName + " - " + character.Quality.QualityDescription + "\r";
+				skills += character.Quality.QualityName + "\r";
 			}
 
-			
-			string htmlString = "<!DOCTYPE html>\r\n<html class=\"bg\">\r\n<head><link rel=\"stylesheet\" href=\"apiStyle.css\" /><meta charset=\"utf-8\" /><title></title>\r\n</head>\r\n" +
-				"<body class=\"bodySpace\">\r\n<div class=\"bodySpace\">\r\n<div class=\"inline topSpace\">\r\n <div class=\"inline\">\r\n<div class=\"nameBox inline\">\r\n" +
-				"<div>\r\n<p class=\"inline nameText\">Name: </p>\r\n<p type=\"text\" class=\"inline borderLow bg\">" + character.Name + "</p>\r\n</div>\r\n</div>\r\n<div class=\"ageBox inline\">\r\n" +
-				"<div>\r\n<p class=\"inline nameText\">Age: </p>\r\n<p type=\"number\" class=\"inline noBorder borderLow bg ageInput\" >"+character.Age.ToString()+"</p>\r\n" +
-				"</div>\r\n</div>\r\n<div class=\"genderBox inline\">\r\n<div>\r\n<p class=\"inline nameText\">Gender: </p>\r\n" +
-				"<p type=\"text\" class=\"inline noBorder borderLow bg genderInput\"> "+character.Gender+"</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<br />\r\n" +
-				"<div class=\"inline marginL20\">\r\n<div class=\"inline marginL20\">\r\n<div class=\"initBox\" >\r\n<div style=\"height: 30px;\">\r\n" +
-				"<p class=\"borderLow boxText\">Initiative</p>\r\n</div>\r\n<div class=\"borderLow marginL5\">\r\n<p class=\"inline\">1.</p>\r\n<input class=\"inline bg initInput\" />\r\n" +
-				"</div>\r\n<div class=\"borderLow marginL5\">\r\n<p class=\"inline\">2.</p>\r\n<input class=\"inline bg initInput\" />\r\n</div>\r\n<div class=\"borderLow marginL5\">\r\n" +
-				"<p class=\"inline\">3.</p>\r\n<input class=\"inline bg initInput\" />\r\n</div>\r\n<div class=\"borderLow marginL5\">\r\n<p class=\"inline\">3.</p>\r\n" +
-				"<input class=\"inline bg initInput\" />\r\n</div>\r\n</div>\r\n<div class=\"equipmintBox\">\r\n<p class=\"centerText height30 borderLow\">Equipment</p>\r\n" +
-				"<p>" + "" + "</p>\r\n</div>\r\n<span class=\"inline\">\r\n</span>\r\n</div>\r\n<div class=\"inline marginL20\">\r\n<div class=\"initBox\" >\r\n" +
-				"<p class=\"borderLow boxText\">Filler</p>\r\n</div>\r\n<div class=\"equipmintBox\">\r\n<p class=\"centerText height30 borderLow\">Weapons</p>\r\n" +
-				"<p>" + "" + "</p>\r\n</div><span class=\"inline\"></span></div>\r\n<div class=\"inline\"><div class=\"skillBox marginL20\"><p class=\"centerText height30 borderLow\">Skill</p>\r\n" +
-				"<p>" + skills + "</p>\r\n</div><br /></div></div>\r\n<div class=\"marginL20\"><div class=\"marginL20\"><div class=\"inline\"><div class=\"inventoryBox\"><p class=\"centerText height30 borderLow\">Notes</p>\r\n" +
-				"<p></p>\r\n</div></div>\r\n<div class=\"inline\"><div class=\"qualitiesBox\"><p class=\"centerText height30 borderLow\">Qualities</p>\r\n" +
-				"<p>" + qualities + "</p>\r\n</div></div></div></div><br />\r\n<div><div class=\"backStoryBox\"><p class=\"centerText height30 borderLow\">Backstory</p>\r\n" +
-				"<p>" + character.Backstory + "</p>\r\n</div></div><br /></div></body></html>";
-						
+
+			string htmlString = "<!DOCTYPE html>\r\n<html class=\"bg\">\r\n<head>\r\n<link rel=\"stylesheet\" href=\"style.css\" />\r\n<meta charset=\"utf-8\" />\r\n" +
+				"<title></title>\r\n</head>\r\n<body class=\"bodySpace\">\r\n<div class=\"bodySpace\">\r\n<div class=\"inline topSpace\">\r\n<div class=\"inline\">\r\n" +
+				"<div class=\"nameBox inline\">\r\n<div>\r\n<p class=\"inline nameText\">Name: </p>\r\n<p type=\"text\" class=\"inline borderLow bg font6\">" + character.Name + "</p>\r\n" +
+				"</div>\r\n</div>\r\n<div class=\"ageBox inline\">\r\n<div>\r\n<p class=\"inline nameText\">Age:</p>\r\n<p type=\"number\" class=\"inline noBorder borderLow bg ageInput font6\">" + character.Age + "</p>\r\n" +
+				"</div>\r\n</div>\r\n<div class=\"genderBox inline\">\r\n<div>\r\n<p class=\"inline nameText\">Gender: </p>\r\n<p type=\"text\" class=\"inline noBorder borderLow bg genderInput font6\"> " + character.Gender + "</p>\r\n" +
+				"</div>\r\n</div>\r\n</div>\r\n</div>\r\n<br />\r\n<div class=\"inline marginL20\">\r\n<div class=\"inline marginL20\">\r\n<div class=\"initBox\">\r\n" +
+				"<div style=\"height: 30px;\">\r\n<p class=\"borderLow boxText\">Initiative</p>\r\n</div>\r\n<div class=\"borderLow marginL5\">\r\n<p class=\"inline\">1.</p>\r\n" +
+				"<input class=\"inline bg initInput\" />\r\n</div>\r\n<div class=\"borderLow marginL5\">\r\n<p class=\"inline\">2.</p>\r\n<input class=\"inline bg initInput\" />\r\n" +
+				"</div>\r\n<div class=\"borderLow marginL5\">\r\n<p class=\"inline\">3.</p>\r\n<input class=\"inline bg initInput\" />\r\n</div>\r\n<div class=\"borderLow marginL5\">\r\n" +
+				"<p class=\"inline\">3.</p>\r\n<input class=\"inline bg initInput\" />\r\n</div>\r\n</div>\r\n<div class=\"equipmintBox\">\r\n<p class=\"centerText height30 borderLow\">Equipment</p>\r\n" +
+				"<p></p>\r\n</div>\r\n<span class=\"inline\">\r\n</span>\r\n</div>\r\n<div class=\"inline marginL20\">\r\n<div class=\"initBox\">\r\n<p class=\"borderLow boxText\">Filler</p>\r\n" +
+				"</div>\r\n<div class=\"equipmintBox\">\r\n<p class=\"centerText height30 borderLow\">Weapons</p>\r\n<p></p>\r\n</div>\r\n<span class=\"inline\"></span>\r\n</div>\r\n" +
+				"<div class=\"inline\">\r\n<div class=\"skillBox marginL20\">\r\n<p class=\"centerText height30 borderLow\">Skill</p>\r\n" + skills + 
+				"</div>\r\n<br />\r\n</div>\r\n</div>\r\n<br />\r\n<div class=\"marginL20\">\r\n<div class=\"marginL20 grid\">\r\n<div class=\"inventoryBox item1\">\r\n" +
+				"<p class=\"centerText height30 borderLow\">Notes</p>\r\n<p class=\"font6\"> Notes: </p>\r\n<p></p>\r\n</div>\r\n<div class=\"qualitiesBox\">\r\n<p class=\"centerText height30 borderLow\">Qualities</p>\r\n" + qualities +
+				" \r\n</div>\r\n</div>\r\n</div>\r\n<br />\r\n<div>\r\n<div class=\"backStoryBox\">\r\n<p class=\"centerText height30 borderLow\">Backstory</p>\r\n" +
+				"<p class=\"font6\">" + character.Backstory + "</p>\r\n</div>\r\n</div>\r\n<br />\r\n</div>\r\n</body>\r\n</html>";
+
 			File.WriteAllText( _resourceLocation + "character.html", htmlString);
 		}
 

@@ -1,0 +1,25 @@
+﻿@model Accounts
+
+@if (Model == null) {
+    <h2>
+        No profiles
+    </h2>
+} else {
+    <div class="text-center">
+        <h2><b>@Model.Title</b></h2>
+        <h4>@Model.Description</h4>
+        <img src="@Model.Image" width="640" height="360" /> 
+    </div>
+
+    <div class="text-center">
+        <a asp-controller="Account" asp-action="EditProfile" asp-route-ID="@Model.ID" class="btn btn-primary ">
+            <i class="bi bi-brush"></i> Edit profile
+        </a>
+        <a asp-controller="Account" asp-action="Delete" asp-route-ID="@Model.ID" class="btn btn-danger ">
+            <i class="bi bi-trash2-fill"></i> Delete profile
+        </a>
+        <a asp-controller="Character" asp-action="CreatorPage" asp-route-ID="@Model.ID" class="btn btn-secondary ">
+            <i class="bi bi-file-earmark-plus-fill"></i> Add characters to profile
+        </a>
+    </div>
+}
