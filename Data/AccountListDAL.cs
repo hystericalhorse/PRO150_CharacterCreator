@@ -34,8 +34,8 @@ namespace CharacterCreator.Data {
 
         public bool isAccountLogin(string username, string password)
 		{
-			Accounts account = DB.Accounts.Where(a => a.Username.ToLower().Equals(password.ToLower())).FirstOrDefault();
-			if (account == null) return true;
+			//Accounts account = DB.Accounts.Where(a => a.Username.ToLower().Equals(password.ToLower())).FirstOrDefault();
+			//if (account == null) return true;
 			return false;
 		}
 

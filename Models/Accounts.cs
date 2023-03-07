@@ -4,6 +4,7 @@ namespace CharacterCreator.Models {
 	public class Accounts {
 		[Key]
 		public int ID { get; set; }
+		public int CharacterID { get; set; }
 		public string UserID { get; set; } = string.Empty;
 		[Required(ErrorMessage = "Title is required")]
 		public string Title { get; set; } = string.Empty; 

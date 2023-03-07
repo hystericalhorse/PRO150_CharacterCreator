@@ -12,6 +12,7 @@ namespace CharacterCreator.Models
         public int PlayerID { get; set; }
 		[Required]
 		public string Name { get; set; } = "Unnamed Character";
+		public string UserID { get; set; }
 
         public uint Age { get; set; }
 
