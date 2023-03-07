@@ -32,8 +32,14 @@ namespace CharacterCreator.Data {
 			DB.SaveChanges();
 		}
 
+        public bool isAccountLogin(string username, string password)
+		{
+			Accounts account = DB.Accounts.Where(a => a.Username.ToLower().Equals(password.ToLower())).FirstOrDefault();
+			if (account == null) return true;
+			return false;
+		}
 
-		public Accounts getAccount(int id)
+        public Accounts getAccount(int id)
 		{
 			return DB.Accounts.Where(a => a.ID == id).FirstOrDefault();
 		}
