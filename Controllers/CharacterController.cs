@@ -68,7 +68,7 @@ namespace CharacterCreator.Controllers
 				}
 			}
 
-			TempData["sSki"] = "active";
+			TempData["sInt"] = "active";
 
 			return View("CharacterCreator", ch);
 		}
