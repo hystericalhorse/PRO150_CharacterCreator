@@ -50,7 +50,6 @@ namespace CharacterCreator.Controllers
         [Authorize]
         [HttpGet]
         public IActionResult EditProfile(int ID) {
-            if (ID == null) return NotFound();
             Accounts FoundProfile = DAL.getAccount(ID);
             if (FoundProfile == null) return NotFound();
 
@@ -61,6 +60,7 @@ namespace CharacterCreator.Controllers
         [HttpPost]
         public IActionResult EditProfile(Accounts Account) {
             if (ModelState.IsValid) {
+				Account.UserID = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 DAL.editAccount(Account);
                 TempData["Success"] = Account.Title + " updated";
                 return RedirectToAction("Profiles", "Account");
@@ -71,7 +71,7 @@ namespace CharacterCreator.Controllers
         [Authorize]
 		[HttpGet]
 		public IActionResult Profiles() { // Loads all the profiles
-			return View(DAL.getAccounts());
+			return View(DAL.GetMyAccounts(User.FindFirstValue(ClaimTypes.NameIdentifier)));
 		}
 
 		// Updates the profile page with the new values

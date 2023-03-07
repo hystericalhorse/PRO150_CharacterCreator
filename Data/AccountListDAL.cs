@@ -47,10 +47,14 @@ namespace CharacterCreator.Data {
 		{
 			return DB.Accounts.ToList();
 		}
-	
-		// Character
 
-		public void addCharacter(Character character)
+		public IEnumerable<Accounts> GetMyAccounts(string ID) {
+			return DB.Accounts.Where(Presets => Presets.UserID == ID);
+		}
+
+        // Character
+
+        public void addCharacter(Character character)
 		{
 			DB.Characters.Add(character);
 			DB.SaveChanges();
