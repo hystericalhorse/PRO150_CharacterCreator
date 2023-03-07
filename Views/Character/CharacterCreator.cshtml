@@ -2,17 +2,36 @@
 
 @if (Model != null)
 {
-<ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active" asp-area="" asp-controller="Character" asp-action="CreatorPage">Character Details</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled">Attribute</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled">Stats</a>
-  </li>
-</ul>
+<div class="mt-3">
+	<ul class="nav nav-tabs justify-content-center" role="tablist">
+		<li class="nav-item active">
+			<button data-bs-toggle="tab" data-bs-target="#details" role="tab" class="nav-link @TempData["sDet"]">Details</button>
+		</li>
+		<li class="nav-item">
+			<button data-bs-toggle="tab" data-bs-target="#attributes" role="tab" class="nav-link @TempData["sAtt"]">Attributes</button>
+		</li>
+		<li class="nav-item">
+			<button data-bs-toggle="tab" data-bs-target="#skills" role="tab" class="nav-link @TempData["sSki"]">Skills & Qualities</button>
+		</li>
+		<li class="nav-item">
+			<button data-bs-toggle="tab" data-bs-target="#sheet" role="tab" class="nav-link @TempData["sInt"]">Interactive Character Sheet</button>
+		</li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane @TempData["sDet"]" id="details" role="tabpanel">
+			<partial name="EditDetailsPartial.cshtml" for="@Model"/>
+		</div>
+		<div class="tab-pane @TempData["sAtt"]" id="attributes" role="tabpanel">
+			<partial name="EditAttributesPartial.cshtml" for="@Model"/>
+		</div>
+		<div class="tab-pane @TempData["sSki"]" id="skills" role="tabpanel">
+			<partial name="EditSkillsQualitiesPartial.cshtml" for="@Model"/>
+		</div>
+		<div class="tab-pane @TempData["sInt"]" id="sheet" role="tabpanel">
+			<partial name="CharacterSheetPartial.cshtml" for="@Model"/>
+		</div>
+	</div>
+</div>
 }
 else
 {

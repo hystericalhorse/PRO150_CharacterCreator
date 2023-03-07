@@ -1,3 +1,7 @@
 input:checked, .highlight-checked {
     background-color: white;
 }
+
+.width-50 {
+    max-width: 50% !important;
+}

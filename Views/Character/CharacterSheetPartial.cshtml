@@ -4,84 +4,58 @@
 {
 <div class="container-fluid mt-2">
 	<div class="row">
-		<p class="display-3">@Model.Name</p><p class="ms-2 fs-5">@Model.Age</p><p class="ms-1 fs-5">@Model.Gender</p>
+		<p class="h3">@Model.Name</p><p class="ms-2 fs-5">@Model.Age</p><p class="ms-1 fs-5">@Model.Gender</p>
 	</div>
 	<div class="row">
 		<ul class="list-group list-group-flush">
-				@if (Model.brawnAtt.Score != AttributeObject.AttributeScore.NEUTRAL) {<li class="list-group-item text-success">@Model.brawnAtt.Score.ToString()</li>}
-				else if (Model.brawnAtt.Score == AttributeObject.AttributeScore.STRONG) {<li class="list-group-item text-danger">@Model.brawnAtt.Score.ToString()</li>}
-				else {<li class="list-group-item">@Model.brawnAtt.Score.ToString()</li>}
+			@switch (Model.brawnAtt)
+			{
+			default:
+			case AttributeScore.Neutral: { <li class="list-group-item">Brawn: @Model.brawnAtt.ToString()</li> break; }
+			case AttributeScore.Strong: { <li class="list-group-item text-success">Brawn: @Model.brawnAtt.ToString()</li> break; }
+			case AttributeScore.Weak: { <li class="list-group-item text-danger">Brawn: @Model.brawnAtt.ToString()</li> break; }
+			}
+			@switch (Model.finesseAtt)
+			{
+			default:
+			case AttributeScore.Neutral: { <li class="list-group-item">Finesse: @Model.finesseAtt.ToString()</li> break; }
+			case AttributeScore.Strong: { <li class="list-group-item text-success">Finesse: @Model.finesseAtt.ToString()</li> break; }
+			case AttributeScore.Weak: { <li class="list-group-item text-danger">Finesse: @Model.finesseAtt.ToString()</li> break; }
+			}
+			@switch (Model.toughAtt)
+			{
+			default:
+			case AttributeScore.Neutral: { <li class="list-group-item">Toughness: @Model.toughAtt.ToString()</li> break; }
+			case AttributeScore.Strong: { <li class="list-group-item text-success">Toughness: @Model.toughAtt.ToString()</li> break; }
+			case AttributeScore.Weak: { <li class="list-group-item text-danger">Toughness: @Model.toughAtt.ToString()</li> break; }
+			}
+			@switch (Model.intellectAtt)
+			{
+			default:
+			case AttributeScore.Neutral: { <li class="list-group-item">Intellect: @Model.intellectAtt.ToString()</li> break; }
+			case AttributeScore.Strong: { <li class="list-group-item text-success">Intellect: @Model.intellectAtt.ToString()</li> break; }
+			case AttributeScore.Weak: { <li class="list-group-item text-danger">Intellect: @Model.intellectAtt.ToString()</li> break; }
+			}
+			@switch (Model.personAtt)
+			{
+			default:
+			case AttributeScore.Neutral: { <li class="list-group-item">Personality: @Model.personAtt.ToString()</li> break; }
+			case AttributeScore.Strong: { <li class="list-group-item text-success">Personality: @Model.personAtt.ToString()</li> break; }
+			case AttributeScore.Weak: { <li class="list-group-item text-danger">Personality: @Model.personAtt.ToString()</li> break; }
+			}
+			@switch (Model.acuityAtt)
+			{
+			default:
+			case AttributeScore.Neutral: { <li class="list-group-item">Acuity: @Model.acuityAtt.ToString()</li> break; }
+			case AttributeScore.Strong: { <li class="list-group-item text-success">Acuity: @Model.acuityAtt.ToString()</li> break; }
+			case AttributeScore.Weak: { <li class="list-group-item text-danger">Acuity: @Model.acuityAtt.ToString()</li> break; }
+			}
 		</ul>
 	</div>
+	<div class="row">
+		<p text="muted"><em>@Model.Backstory</em></p>
+	</div>
 </div>
-
-	<div class="container px-4 text-center">
-		<div class="row gx-5">
-			<div class="col">
-				<div class="p-3">
-					
-				</div>
-			</div>
-			<div class="col">
-				<div class="p-3">
-					<h2>
-					Choose some skills!
-					</h2>
-				</div>
-			</div>
-			<div class="col">
-				<div class="p-3">
-					
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container text-center">
-		<div class="container text-center">
-			<div class="row">
-				<div class="col">
-					<input />
-				</div>
-				<div class="col">
-					<input />
-				</div>
-				<div class="col">
-					<input />
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container px-4 text-center">
-		<div class="row gx-5">
-			<div class="col">
-				<div class="p-3"></div>
-			</div>
-			<div class="col">
-				<div class="p-3"></div>
-			</div>
-		</div>
-	</div>
-	<div class="container text-center">
-		<div class="row align-items-start">
-				<div class="col">
-					</div>
-			   <div class="col">
-					<div class="dropdown">
-						<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Dropdown button
-						</button>
-						<ul class="dropdown-menu" >
-							<li><a class="dropdown-item" href="#">Quality Example 1</a></li>
-							<li><a class="dropdown-item" href="#">Quality Example 2</a></li>
-							<li><a class="dropdown-item" href="#">Quality Example 3</a></li>
-						</ul>
-					</div>			   </div>
-			<div class="col">
-			</div>
-		</div>
-	</div>
-
 }
 else
 {
