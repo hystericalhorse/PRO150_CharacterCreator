@@ -36,7 +36,7 @@ namespace CharacterCreator.API
 						["html"] = "character.html",
 						["assets"] = new System.Text.Json.Nodes.JsonArray
 						{
-							"style.css"
+							"apiStyle.css"
 						}
 					}
 				}

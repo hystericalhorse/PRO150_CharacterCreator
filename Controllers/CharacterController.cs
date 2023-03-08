@@ -377,6 +377,7 @@ namespace CharacterCreator.Controllers
 		}
 		public IActionResult InteractiveSheet(Character ch)
 		{
+			TempData["sInt"] = "active";
 			if (ch != null)
 			{
 				bool got0 = false;
@@ -424,7 +425,7 @@ namespace CharacterCreator.Controllers
 				}
 			}
 
-			return View("CharacterSheet", ch);
+			return View("CharacterCreator", ch);
 		}
 
 
