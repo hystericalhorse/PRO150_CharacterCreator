@@ -8,8 +8,8 @@ namespace CharacterCreator.Models
 
         [Key]
         public int CharacterID { get; set; }
-		[Required]
-        public int PlayerID { get; set; }
+		//[Required]
+        //public int PlayerID { get; set; }
 		[Required]
 		public string Name { get; set; } = "Unnamed Character";
 		public string UserID { get; set; }

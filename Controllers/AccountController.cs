@@ -1,6 +1,7 @@
 ﻿using CharacterCreator.Interfaces;
 using CharacterCreator.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.LibraryModel;
 using System.Security.Claims;
@@ -8,13 +9,23 @@ using System.Security.Claims;
 namespace CharacterCreator.Controllers
 {
 	public class AccountController : Controller {
+
+		private readonly SignInManager<IdentityUser> _signInManager;
+
 		IDataAccessLayer DAL;
-		public AccountController(IDataAccessLayer indal) {
+		public AccountController(IDataAccessLayer indal, SignInManager<IdentityUser> signInManager) {
+			_signInManager = signInManager;
 			DAL = indal;
 		}
 
 		public IActionResult Index() {
 			return View();
+		}
+
+		public IActionResult Characters()
+		{
+			var results = DAL.getCharacters(User.FindFirstValue(ClaimTypes.NameIdentifier));
+			return View(results);
 		}
 
         public IActionResult Delete(int ID) {

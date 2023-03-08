@@ -1,12 +1,42 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CharacterCreator.Models;
 using CharacterCreator.Controllers.Utility;
+using CharacterCreator.Interfaces;
+using System.Security.Claims;
 
 namespace CharacterCreator.Controllers
 {
 	public class CharacterController : Controller
 	{
-		static Character ch = new Character();
+		public static IDataAccessLayer DAL;
+		public CharacterController(IDataAccessLayer dal)
+		{
+			DAL = dal;
+		}
+
+		public IActionResult NewCharacter()
+		{
+			Character ch = new Character();
+			ch.UserID = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+			DAL.addCharacter(ch);
+			return EditCharacter(ch);
+		}
+
+		public IActionResult EditCharacter(string id)
+		{
+			Character ch = DAL.getCharacter(int.Parse(id));
+			CharacterManager.Load(ch);
+
+			return View("CharacterCreator", ch);
+		}
+
+		public IActionResult EditCharacter(Character ch)
+		{
+			CharacterManager.Load(ch);
+
+			return View("CharacterCreator", ch);
+		}
 
 		public IActionResult EditAttributes(string btnradio0, string btnradio1, string btnradio2)
 		{
@@ -19,58 +49,58 @@ namespace CharacterCreator.Controllers
 			{
 				TempData["ErrorDisplay"] = "You Must Select Two Strong Attributes and One Weak Attribute";
 				TempData["sAtt"] = "active";
-				return View("CharacterCreator", ch);
+				return View("CharacterCreator", CharacterManager.character);
 			}
 
 			if (Utilities.AnyEqual(btnradio2, btnradio1, btnradio0))
 			{
 				TempData["ErrorDisplay"] = "Don't Select The Same Attribute Twice";
 				TempData["sAtt"] = "active";
-				return View("CharacterCreator", ch);
+				return View("CharacterCreator", CharacterManager.character);
 			}
 			else
 			{
-				ch.brawnAtt = 0;
-				ch.finesseAtt = 0;
-				ch.toughAtt = 0;
-				ch.intellectAtt = 0;
-				ch.personAtt = 0;
-				ch.acuityAtt = 0;
+				CharacterManager.character.brawnAtt = 0;
+				CharacterManager.character.finesseAtt = 0;
+				CharacterManager.character.toughAtt = 0;
+				CharacterManager.character.intellectAtt = 0;
+				CharacterManager.character.personAtt = 0;
+				CharacterManager.character.acuityAtt = 0;
 
 				switch (btnradio0)
 				{
-					case "Brawn": ch.brawnAtt = (AttributeScore)1; break;
-					case "Finesse": ch.finesseAtt = (AttributeScore)1; break;
-					case "Toughness": ch.toughAtt = (AttributeScore)1; break;
-					case "Intellect": ch.intellectAtt = (AttributeScore)1; break;
-					case "Personality": ch.personAtt = (AttributeScore)1; break;
-					case "Acuity": ch.acuityAtt = (AttributeScore)1; break;
+					case "Brawn": CharacterManager.character.brawnAtt = (AttributeScore)1; break;
+					case "Finesse": CharacterManager.character.finesseAtt = (AttributeScore)1; break;
+					case "Toughness": CharacterManager.character.toughAtt = (AttributeScore)1; break;
+					case "Intellect": CharacterManager.character.intellectAtt = (AttributeScore)1; break;
+					case "Personality": CharacterManager.character.personAtt = (AttributeScore)1; break;
+					case "Acuity": CharacterManager.character.acuityAtt = (AttributeScore)1; break;
 				}
 
 				switch (btnradio1)
 				{
-					case "Brawn": ch.brawnAtt = (AttributeScore)1; break;
-					case "Finesse": ch.finesseAtt = (AttributeScore)1; break;
-					case "Toughness": ch.toughAtt = (AttributeScore)1; break;
-					case "Intellect": ch.intellectAtt = (AttributeScore)1; break;
-					case "Personality": ch.personAtt = (AttributeScore)1; break;
-					case "Acuity": ch.acuityAtt = (AttributeScore)1; break;
+					case "Brawn": CharacterManager.character.brawnAtt = (AttributeScore)1; break;
+					case "Finesse": CharacterManager.character.finesseAtt = (AttributeScore)1; break;
+					case "Toughness": CharacterManager.character.toughAtt = (AttributeScore)1; break;
+					case "Intellect": CharacterManager.character.intellectAtt = (AttributeScore)1; break;
+					case "Personality": CharacterManager.character.personAtt = (AttributeScore)1; break;
+					case "Acuity": CharacterManager.character.acuityAtt = (AttributeScore)1; break;
 				}
 
 				switch (btnradio2)
 				{
-					case "Brawn": ch.brawnAtt = (AttributeScore)2; break;
-					case "Finesse": ch.finesseAtt = (AttributeScore)2; break;
-					case "Toughness": ch.toughAtt = (AttributeScore)2; break;
-					case "Intellect": ch.intellectAtt = (AttributeScore)2; break;
-					case "Personality": ch.personAtt = (AttributeScore)2; break;
-					case "Acuity": ch.acuityAtt = (AttributeScore)2; break;
+					case "Brawn": CharacterManager.character.brawnAtt = (AttributeScore)2; break;
+					case "Finesse": CharacterManager.character.finesseAtt = (AttributeScore)2; break;
+					case "Toughness": CharacterManager.character.toughAtt = (AttributeScore)2; break;
+					case "Intellect": CharacterManager.character.intellectAtt = (AttributeScore)2; break;
+					case "Personality": CharacterManager.character.personAtt = (AttributeScore)2; break;
+					case "Acuity": CharacterManager.character.acuityAtt = (AttributeScore)2; break;
 				}
 			}
 
 			TempData["sInt"] = "active";
 
-			return View("CharacterCreator", ch);
+			return View("CharacterCreator", CharacterManager.character);
 		}
 
 		public IActionResult EditDetails(string name, string age, string gender, string bio, string bioselect)
@@ -84,12 +114,12 @@ namespace CharacterCreator.Controllers
 			{
 				TempData["ErrorDisplay"] = "You Must Specify a Name, Age, and Gender";
 				TempData["sDet"] = "active";
-				return View("CharacterCreator", ch);
+				return View("CharacterCreator", CharacterManager.character);
 			}
 
-			ch.Name = name;
-			ch.Age = uint.Parse(age);
-			ch.Gender = gender;
+			CharacterManager.character.Name = name;
+			CharacterManager.character.Age = uint.Parse(age);
+			CharacterManager.character.Gender = gender;
 
 			if (bioselect != null)
 			{
@@ -97,29 +127,29 @@ namespace CharacterCreator.Controllers
 				{
 					default: break;
 					case "0":
-						ch.Backstory = "You are a child of the old world. You left home at a young age in order to help others find their way in the new world.\n";
+						CharacterManager.character.Backstory = "You are a child of the old world. You left home at a young age in order to help others find their way in the new world.\n";
 						break;
 					case "1":
-						ch.Backstory = "You grew up in poverty in a shanty-town. You've gone into the wasteland to try and find work.\n";
+						CharacterManager.character.Backstory = "You grew up in poverty in a shanty-town. You've gone into the wasteland to try and find work.\n";
 						break;
 					case "2":
-						ch.Backstory = "Your parents were murdered by bounty hunters, and you were spared. Now you scour the wasteland for their killers.\n";
+						CharacterManager.character.Backstory = "Your parents were murdered by bounty hunters, and you were spared. Now you scour the wasteland for their killers.\n";
 						break;
 					case "3":
-						ch.Backstory = "You saved your town from a gang of criminals, and now you're off looking for more adventure.\n";
+						CharacterManager.character.Backstory = "You saved your town from a gang of criminals, and now you're off looking for more adventure.\n";
 						break;
 					case "4":
-						ch.Backstory = "Life at home was boring, and you're sure there's more for you out there in the wasteland.\n";
+						CharacterManager.character.Backstory = "Life at home was boring, and you're sure there's more for you out there in the wasteland.\n";
 						break;
 
 				}
 			}
 
-			ch.Backstory += bio;
+			CharacterManager.character.Backstory += bio;
 
 			TempData["sAtt"] = "active";
 
-			return View("CharacterCreator", ch);
+			return View("CharacterCreator", CharacterManager.character);
 		}
 
 		public IActionResult EditSkillsQualities(string[] skills, string quality)
@@ -128,16 +158,15 @@ namespace CharacterCreator.Controllers
 
 
 
-			return View("CharacterCreator", ch);
+			return View("CharacterCreator", CharacterManager.character);
 		}
 
-		public IActionResult InteractiveSheet()
+		public IActionResult InteractiveSheet(string id)
 		{
 			TempData["sInt"] = "active";
 
-
-
-			return View("CharacterCreator", ch);
+			if (string.IsNullOrEmpty(id)) return View("CharacterCreator", CharacterManager.character);
+			else return View("CharacterSheet", DAL.getCharacter(int.Parse(id)));
 		}
 
         public IActionResult CharacterCreator()
@@ -147,7 +176,7 @@ namespace CharacterCreator.Controllers
 			TempData["sSki"] = "disabled";
 			TempData["sInt"] = "disabled";
 
-			return View(ch);
+			return View(CharacterManager.character);
 		}
 
         //[Route("MyCharacters/{id?}")]
