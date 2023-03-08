@@ -31,6 +31,14 @@ namespace CharacterCreator.Controllers
 			return View("CharacterCreator", ch);
 		}
 
+		public IActionResult DeleteCharacter(string id)
+		{
+			Character ch = DAL.getCharacter(int.Parse(id));
+			if (ch != null) DAL.deleteCharacter(int.Parse(id));
+
+			return RedirectToAction("Characters", "Account");
+		}
+
 		public IActionResult EditCharacter(Character ch)
 		{
 			CharacterManager.Load(ch);
@@ -100,6 +108,8 @@ namespace CharacterCreator.Controllers
 
 			TempData["sInt"] = "active";
 
+			DAL.editCharacter(CharacterManager.character);
+
 			return View("CharacterCreator", CharacterManager.character);
 		}
 
@@ -149,6 +159,8 @@ namespace CharacterCreator.Controllers
 
 			TempData["sAtt"] = "active";
 
+			DAL.editCharacter(CharacterManager.character);
+
 			return View("CharacterCreator", CharacterManager.character);
 		}
 
@@ -156,7 +168,7 @@ namespace CharacterCreator.Controllers
 		{
 			TempData["sInt"] = "active";
 
-
+			DAL.editCharacter(CharacterManager.character);
 
 			return View("CharacterCreator", CharacterManager.character);
 		}
@@ -164,6 +176,8 @@ namespace CharacterCreator.Controllers
 		public IActionResult InteractiveSheet(string id)
 		{
 			TempData["sInt"] = "active";
+
+			DAL.editCharacter(CharacterManager.character);
 
 			if (string.IsNullOrEmpty(id)) return View("CharacterCreator", CharacterManager.character);
 			else return View("CharacterSheet", DAL.getCharacter(int.Parse(id)));
