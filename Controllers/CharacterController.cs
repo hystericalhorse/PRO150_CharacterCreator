@@ -28,6 +28,54 @@ namespace CharacterCreator.Controllers
 		{
 			Character ch = DAL.getCharacter(int.Parse(id));
 			CharacterManager.Load(ch);
+
+			if (ch != null)
+			{
+				bool got0 = false;
+				bool got1 = false;
+				bool got2 = false;
+
+				while (!got0)
+				{
+					TempData["sb1"] = "";
+					TempData["sf1"] = "";
+					TempData["st1"] = "";
+					TempData["si1"] = "";
+					TempData["sp1"] = "";
+					TempData["sa1"] = "";
+
+					if (ch.brawnAtt == (AttributeScore)1) { TempData["sb1"] = "checked"; got0 = true; break; }
+					if (ch.finesseAtt == (AttributeScore)1) { TempData["sf1"] = "checked"; got0 = true; break; }
+					if (ch.toughAtt == (AttributeScore)1) { TempData["st1"] = "checked"; got0 = true; break; }
+					if (ch.intellectAtt == (AttributeScore)1) { TempData["si1"] = "checked"; got0 = true; break; }
+					if (ch.personAtt == (AttributeScore)1) { TempData["sp1"] = "checked"; got0 = true; break; }
+					if (ch.acuityAtt == (AttributeScore)1) { TempData["sa1"] = "checked"; got0 = true; break; }
+					got0 = true;
+				}
+
+				while (!got1)
+				{
+					if (ch.brawnAtt == (AttributeScore)1 && TempData["sb1"] != "checked") { TempData["sb2"] = "checked"; got1 = true; break; }
+					if (ch.finesseAtt == (AttributeScore)1 && TempData["sf1"] != "checked") { TempData["sf2"] = "checked"; got1 = true; break; }
+					if (ch.toughAtt == (AttributeScore)1 && TempData["st1"] != "checked") { TempData["st2"] = "checked"; got1 = true; break; }
+					if (ch.intellectAtt == (AttributeScore)1 && TempData["si1"] != "checked") { TempData["si2"] = "checked"; got1 = true; break; }
+					if (ch.personAtt == (AttributeScore)1 && TempData["sp1"] != "checked") { TempData["sp2"] = "checked"; got1 = true; break; }
+					if (ch.acuityAtt == (AttributeScore)1 && TempData["sa1"] != "checked") { TempData["sa2"] = "checked"; got1 = true; break; }
+					got1 = true;
+				}
+
+				while (!got2)
+				{
+					if (ch.brawnAtt == (AttributeScore)2) { TempData["wb1"] = "checked"; got2 = true; break; }
+					if (ch.finesseAtt == (AttributeScore)2) { TempData["wf1"] = "checked"; got2 = true; break; }
+					if (ch.toughAtt == (AttributeScore)2) { TempData["wt1"] = "checked"; got2 = true; break; }
+					if (ch.intellectAtt == (AttributeScore)2) { TempData["wi1"] = "checked"; got2 = true; break; }
+					if (ch.personAtt == (AttributeScore)2) { TempData["wp1"] = "checked"; got2 = true; break; }
+					if (ch.acuityAtt == (AttributeScore)2) { TempData["wa1"] = "checked"; got2 = true; break; }
+					got2 = true;
+				}
+			}
+
 			TempData["sDet"] = "active";
 			return View("CharacterCreator", ch);
 		}
@@ -47,11 +95,106 @@ namespace CharacterCreator.Controllers
 			TempData["sAtt"] = "disabled";
 			TempData["sSki"] = "disabled";
 			TempData["sInt"] = "disabled";
+
+			if (ch != null)
+			{
+				bool got0 = false;
+				bool got1 = false;
+				bool got2 = false;
+
+				while (!got0)
+				{
+					TempData["sb1"] = "";
+					TempData["sf1"] = "";
+					TempData["st1"] = "";
+					TempData["si1"] = "";
+					TempData["sp1"] = "";
+					TempData["sa1"] = "";
+
+					if (ch.brawnAtt == (AttributeScore)1) { TempData["sb1"] = "checked"; got0 = true; break; }
+					if (ch.finesseAtt == (AttributeScore)1) { TempData["sf1"] = "checked"; got0 = true; break; }
+					if (ch.toughAtt == (AttributeScore)1) { TempData["st1"] = "checked"; got0 = true; break; }
+					if (ch.intellectAtt == (AttributeScore)1) { TempData["si1"] = "checked"; got0 = true; break; }
+					if (ch.personAtt == (AttributeScore)1) { TempData["sp1"] = "checked"; got0 = true; break; }
+					if (ch.acuityAtt == (AttributeScore)1) { TempData["sa1"] = "checked"; got0 = true; break; }
+					got0 = true;
+				}
+
+				while (!got1)
+				{
+					if (ch.brawnAtt == (AttributeScore)1 && TempData["sb1"] != "checked") { TempData["sb2"] = "checked"; got1 = true; break; }
+					if (ch.finesseAtt == (AttributeScore)1 && TempData["sf1"] != "checked") { TempData["sf2"] = "checked"; got1 = true; break; }
+					if (ch.toughAtt == (AttributeScore)1 && TempData["st1"] != "checked") { TempData["st2"] = "checked"; got1 = true; break; }
+					if (ch.intellectAtt == (AttributeScore)1 && TempData["si1"] != "checked") { TempData["si2"] = "checked"; got1 = true; break; }
+					if (ch.personAtt == (AttributeScore)1 && TempData["sp1"] != "checked") { TempData["sp2"] = "checked"; got1 = true; break; }
+					if (ch.acuityAtt == (AttributeScore)1 && TempData["sa1"] != "checked") { TempData["sa2"] = "checked"; got1 = true; break; }
+					got1 = true;
+				}
+
+				while (!got2)
+				{
+					if (ch.brawnAtt == (AttributeScore)2) { TempData["wb1"] = "checked"; got2 = true; break; }
+					if (ch.finesseAtt == (AttributeScore)2) { TempData["wf1"] = "checked"; got2 = true; break; }
+					if (ch.toughAtt == (AttributeScore)2) { TempData["wt1"] = "checked"; got2 = true; break; }
+					if (ch.intellectAtt == (AttributeScore)2) { TempData["wi1"] = "checked"; got2 = true; break; }
+					if (ch.personAtt == (AttributeScore)2) { TempData["wp1"] = "checked"; got2 = true; break; }
+					if (ch.acuityAtt == (AttributeScore)2) { TempData["wa1"] = "checked"; got2 = true; break; }
+					got2 = true;
+				}
+			}
+
 			return View("CharacterCreator", ch);
 		}
 
 		public IActionResult EditAttributes(string btnradio0, string btnradio1, string btnradio2)
 		{
+			if (CharacterManager.character != null)
+			{
+				bool got0 = false;
+				bool got1 = false;
+				bool got2 = false;
+
+				while (!got0)
+				{
+					TempData["sb1"] = "";
+					TempData["sf1"] = "";
+					TempData["st1"] = "";
+					TempData["si1"] = "";
+					TempData["sp1"] = "";
+					TempData["sa1"] = "";
+
+					if (CharacterManager.character.brawnAtt		== (AttributeScore) 1) { TempData["sb1"] = "checked"; got0 = true; break; }
+					if (CharacterManager.character.finesseAtt	== (AttributeScore) 1) { TempData["sf1"] = "checked"; got0 = true; break; }
+					if (CharacterManager.character.toughAtt		== (AttributeScore) 1) { TempData["st1"] = "checked"; got0 = true; break; }
+					if (CharacterManager.character.intellectAtt == (AttributeScore) 1) { TempData["si1"] = "checked"; got0 = true; break; }
+					if (CharacterManager.character.personAtt	== (AttributeScore) 1) { TempData["sp1"] = "checked"; got0 = true; break; }
+					if (CharacterManager.character.acuityAtt	== (AttributeScore) 1) { TempData["sa1"] = "checked"; got0 = true; break; }
+					got0 = true;
+				}
+
+				while (!got1)
+				{
+					if (CharacterManager.character.brawnAtt		== (AttributeScore) 1 && TempData["sb1"] != "checked") { TempData["sb2"] = "checked"; got1 = true; break; }
+					if (CharacterManager.character.finesseAtt	== (AttributeScore) 1 && TempData["sf1"] != "checked") { TempData["sf2"] = "checked"; got1 = true; break; }
+					if (CharacterManager.character.toughAtt		== (AttributeScore) 1 && TempData["st1"] != "checked") { TempData["st2"] = "checked"; got1 = true; break; }
+					if (CharacterManager.character.intellectAtt == (AttributeScore) 1 && TempData["si1"] != "checked") { TempData["si2"] = "checked"; got1 = true; break; }
+					if (CharacterManager.character.personAtt	== (AttributeScore) 1 && TempData["sp1"] != "checked") { TempData["sp2"] = "checked"; got1 = true; break; }
+					if (CharacterManager.character.acuityAtt	== (AttributeScore) 1 && TempData["sa1"] != "checked") { TempData["sa2"] = "checked"; got1 = true; break; }
+					got1 = true;
+				}
+
+				while (!got2)
+				{
+					if (CharacterManager.character.brawnAtt		== (AttributeScore) 2) { TempData["wb1"] = "checked"; got2 = true;  break;}
+					if (CharacterManager.character.finesseAtt	== (AttributeScore) 2) { TempData["wf1"] = "checked"; got2 = true;  break;}
+					if (CharacterManager.character.toughAtt		== (AttributeScore) 2) { TempData["wt1"] = "checked"; got2 = true;  break;}
+					if (CharacterManager.character.intellectAtt == (AttributeScore) 2) { TempData["wi1"] = "checked"; got2 = true;  break;}
+					if (CharacterManager.character.personAtt	== (AttributeScore) 2) { TempData["wp1"] = "checked"; got2 = true;  break;}
+					if (CharacterManager.character.acuityAtt	== (AttributeScore) 2) { TempData["wa1"] = "checked"; got2 = true; break; }
+					got2 = true;
+				}
+			}
+
 			TempData["sDet"] = "";
 			TempData["sAtt"] = "";
 			TempData["sSki"] = "disabled";
@@ -181,12 +324,107 @@ namespace CharacterCreator.Controllers
 		public IActionResult InteractiveSheet(string id)
 		{
 			TempData["sInt"] = "active";
+			Character ch = DAL.getCharacter(int.Parse(id));
 
-			return View("CharacterCreator", DAL.getCharacter(int.Parse(id)));
+			if (ch != null)
+			{
+				bool got0 = false;
+				bool got1 = false;
+				bool got2 = false;
+
+				while (!got0)
+				{
+					TempData["sb1"] = "";
+					TempData["sf1"] = "";
+					TempData["st1"] = "";
+					TempData["si1"] = "";
+					TempData["sp1"] = "";
+					TempData["sa1"] = "";
+
+					if (ch.brawnAtt == (AttributeScore)1) { TempData["sb1"] = "checked"; got0 = true; break; }
+					if (ch.finesseAtt == (AttributeScore)1) { TempData["sf1"] = "checked"; got0 = true; break; }
+					if (ch.toughAtt == (AttributeScore)1) { TempData["st1"] = "checked"; got0 = true; break; }
+					if (ch.intellectAtt == (AttributeScore)1) { TempData["si1"] = "checked"; got0 = true; break; }
+					if (ch.personAtt == (AttributeScore)1) { TempData["sp1"] = "checked"; got0 = true; break; }
+					if (ch.acuityAtt == (AttributeScore)1) { TempData["sa1"] = "checked"; got0 = true; break; }
+					got0 = true;
+				}
+
+				while (!got1)
+				{
+					if (ch.brawnAtt == (AttributeScore)1 && TempData["sb1"] != "checked") { TempData["sb2"] = "checked"; got1 = true; break; }
+					if (ch.finesseAtt == (AttributeScore)1 && TempData["sf1"] != "checked") { TempData["sf2"] = "checked"; got1 = true; break; }
+					if (ch.toughAtt == (AttributeScore)1 && TempData["st1"] != "checked") { TempData["st2"] = "checked"; got1 = true; break; }
+					if (ch.intellectAtt == (AttributeScore)1 && TempData["si1"] != "checked") { TempData["si2"] = "checked"; got1 = true; break; }
+					if (ch.personAtt == (AttributeScore)1 && TempData["sp1"] != "checked") { TempData["sp2"] = "checked"; got1 = true; break; }
+					if (ch.acuityAtt == (AttributeScore)1 && TempData["sa1"] != "checked") { TempData["sa2"] = "checked"; got1 = true; break; }
+					got1 = true;
+				}
+
+				while (!got2)
+				{
+					if (ch.brawnAtt == (AttributeScore)2) { TempData["wb1"] = "checked"; got2 = true; break; }
+					if (ch.finesseAtt == (AttributeScore)2) { TempData["wf1"] = "checked"; got2 = true; break; }
+					if (ch.toughAtt == (AttributeScore)2) { TempData["wt1"] = "checked"; got2 = true; break; }
+					if (ch.intellectAtt == (AttributeScore)2) { TempData["wi1"] = "checked"; got2 = true; break; }
+					if (ch.personAtt == (AttributeScore)2) { TempData["wp1"] = "checked"; got2 = true; break; }
+					if (ch.acuityAtt == (AttributeScore)2) { TempData["wa1"] = "checked"; got2 = true; break; }
+					got2 = true;
+				}
+			}
+
+			return View("CharacterCreator", ch);
 		}
-		public IActionResult InteractiveSheet(Character character)
+		public IActionResult InteractiveSheet(Character ch)
 		{
-			return View("CharacterSheet", character);
+			if (ch != null)
+			{
+				bool got0 = false;
+				bool got1 = false;
+				bool got2 = false;
+
+				while (!got0)
+				{
+					TempData["sb1"] = "";
+					TempData["sf1"] = "";
+					TempData["st1"] = "";
+					TempData["si1"] = "";
+					TempData["sp1"] = "";
+					TempData["sa1"] = "";
+
+					if (ch.brawnAtt == (AttributeScore)1) { TempData["sb1"] = "checked"; got0 = true; break; }
+					if (ch.finesseAtt == (AttributeScore)1) { TempData["sf1"] = "checked"; got0 = true; break; }
+					if (ch.toughAtt == (AttributeScore)1) { TempData["st1"] = "checked"; got0 = true; break; }
+					if (ch.intellectAtt == (AttributeScore)1) { TempData["si1"] = "checked"; got0 = true; break; }
+					if (ch.personAtt == (AttributeScore)1) { TempData["sp1"] = "checked"; got0 = true; break; }
+					if (ch.acuityAtt == (AttributeScore)1) { TempData["sa1"] = "checked"; got0 = true; break; }
+					got0 = true;
+				}
+
+				while (!got1)
+				{
+					if (ch.brawnAtt == (AttributeScore)1 && TempData["sb1"] != "checked") { TempData["sb2"] = "checked"; got1 = true; break; }
+					if (ch.finesseAtt == (AttributeScore)1 && TempData["sf1"] != "checked") { TempData["sf2"] = "checked"; got1 = true; break; }
+					if (ch.toughAtt == (AttributeScore)1 && TempData["st1"] != "checked") { TempData["st2"] = "checked"; got1 = true; break; }
+					if (ch.intellectAtt == (AttributeScore)1 && TempData["si1"] != "checked") { TempData["si2"] = "checked"; got1 = true; break; }
+					if (ch.personAtt == (AttributeScore)1 && TempData["sp1"] != "checked") { TempData["sp2"] = "checked"; got1 = true; break; }
+					if (ch.acuityAtt == (AttributeScore)1 && TempData["sa1"] != "checked") { TempData["sa2"] = "checked"; got1 = true; break; }
+					got1 = true;
+				}
+
+				while (!got2)
+				{
+					if (ch.brawnAtt == (AttributeScore)2) { TempData["wb1"] = "checked"; got2 = true; break; }
+					if (ch.finesseAtt == (AttributeScore)2) { TempData["wf1"] = "checked"; got2 = true; break; }
+					if (ch.toughAtt == (AttributeScore)2) { TempData["wt1"] = "checked"; got2 = true; break; }
+					if (ch.intellectAtt == (AttributeScore)2) { TempData["wi1"] = "checked"; got2 = true; break; }
+					if (ch.personAtt == (AttributeScore)2) { TempData["wp1"] = "checked"; got2 = true; break; }
+					if (ch.acuityAtt == (AttributeScore)2) { TempData["wa1"] = "checked"; got2 = true; break; }
+					got2 = true;
+				}
+			}
+
+			return View("CharacterSheet", ch);
 		}
 
 
@@ -196,6 +434,53 @@ namespace CharacterCreator.Controllers
 			TempData["sAtt"] = "disabled";
 			TempData["sSki"] = "disabled";
 			TempData["sInt"] = "disabled";
+
+			if (CharacterManager.character != null)
+			{
+				bool got0 = false;
+				bool got1 = false;
+				bool got2 = false;
+
+				while (!got0)
+				{
+					TempData["sb1"] = "";
+					TempData["sf1"] = "";
+					TempData["st1"] = "";
+					TempData["si1"] = "";
+					TempData["sp1"] = "";
+					TempData["sa1"] = "";
+
+					if (CharacterManager.character.brawnAtt == (AttributeScore)1) { TempData["sb1"] = "checked"; got0 = true; break; }
+					if (CharacterManager.character.finesseAtt == (AttributeScore)1) { TempData["sf1"] = "checked"; got0 = true; break; }
+					if (CharacterManager.character.toughAtt == (AttributeScore)1) { TempData["st1"] = "checked"; got0 = true; break; }
+					if (CharacterManager.character.intellectAtt == (AttributeScore)1) { TempData["si1"] = "checked"; got0 = true; break; }
+					if (CharacterManager.character.personAtt == (AttributeScore)1) { TempData["sp1"] = "checked"; got0 = true; break; }
+					if (CharacterManager.character.acuityAtt == (AttributeScore)1) { TempData["sa1"] = "checked"; got0 = true; break; }
+					got0 = true;
+				}
+
+				while (!got1)
+				{
+					if (CharacterManager.character.brawnAtt == (AttributeScore)1 && TempData["sb1"] != "checked") { TempData["sb2"] = "checked"; got1 = true; break; }
+					if (CharacterManager.character.finesseAtt == (AttributeScore)1 && TempData["sf1"] != "checked") { TempData["sf2"] = "checked"; got1 = true; break; }
+					if (CharacterManager.character.toughAtt == (AttributeScore)1 && TempData["st1"] != "checked") { TempData["st2"] = "checked"; got1 = true; break; }
+					if (CharacterManager.character.intellectAtt == (AttributeScore)1 && TempData["si1"] != "checked") { TempData["si2"] = "checked"; got1 = true; break; }
+					if (CharacterManager.character.personAtt == (AttributeScore)1 && TempData["sp1"] != "checked") { TempData["sp2"] = "checked"; got1 = true; break; }
+					if (CharacterManager.character.acuityAtt == (AttributeScore)1 && TempData["sa1"] != "checked") { TempData["sa2"] = "checked"; got1 = true; break; }
+					got1 = true;
+				}
+
+				while (!got2)
+				{
+					if (CharacterManager.character.brawnAtt == (AttributeScore)2) { TempData["wb1"] = "checked"; got2 = true; break; }
+					if (CharacterManager.character.finesseAtt == (AttributeScore)2) { TempData["wf1"] = "checked"; got2 = true; break; }
+					if (CharacterManager.character.toughAtt == (AttributeScore)2) { TempData["wt1"] = "checked"; got2 = true; break; }
+					if (CharacterManager.character.intellectAtt == (AttributeScore)2) { TempData["wi1"] = "checked"; got2 = true; break; }
+					if (CharacterManager.character.personAtt == (AttributeScore)2) { TempData["wp1"] = "checked"; got2 = true; break; }
+					if (CharacterManager.character.acuityAtt == (AttributeScore)2) { TempData["wa1"] = "checked"; got2 = true; break; }
+					got2 = true;
+				}
+			}
 
 			return View(CharacterManager.character);
 		}
