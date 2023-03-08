@@ -29,6 +29,7 @@
     <Folder Include="Data\" />
     <Folder Include="Migrations\" />
     <Folder Include="wwwroot\APIFiles\APIOutput\" />
+    <Folder Include="wwwroot\APIFiles\APIResource\" />
   </ItemGroup>
 
 </Project>
