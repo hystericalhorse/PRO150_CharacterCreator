@@ -103,5 +103,10 @@ namespace CharacterCreator.Data {
 			DB.SaveChanges();
 
 		}
+
+		public IEnumerable<Character> getCharacters(string account)
+		{
+			return DB.Characters.Where(c => c.UserID == account.ToString()).ToList();
+		}
 	}
 }

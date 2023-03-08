@@ -13,6 +13,7 @@ namespace CharacterCreator.Interfaces {
 
         public Character getCharacter(int id);
 		public Character getCharacter(string name);
+		public IEnumerable<Character> getCharacters(string account);
 		public IEnumerable<Character> getCharacters();
 		public void editCharacter(Character character);
 		public void addCharacter(Character character);

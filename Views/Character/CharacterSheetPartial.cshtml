@@ -63,3 +63,13 @@ else
 	<p class="h3">That's weird. There doesn't seem to be anything here!</p>
 </div>
 }
+<div>
+	<form asp-controller="Character" asp-action="printPDF">
+		<input type="hidden" name="charID" value="@Model.CharacterID"/>
+		<button type="submit">
+			<p>
+				Print
+			</p>
+		</button>
+	</form>
+</div>

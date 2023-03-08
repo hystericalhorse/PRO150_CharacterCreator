@@ -9,6 +9,7 @@ namespace CharacterCreator.API
 	{
 		private static string _apiKey = "Bearer pdf_live_gptUUxkz5Su8CvVAS7B5bfbbeENrEOagRuPCbECgSP9";
 		private static string _outputLocation = "wwwroot/APIFiles/APIOutput/";
+		private static string _temp = "API/";
 		private static string _resourceLocation = "wwwroot/APIFiles/APIResource/";
 
 		// change the string value to something that contains the info of character
@@ -35,7 +36,7 @@ namespace CharacterCreator.API
 						["html"] = "character.html",
 						["assets"] = new System.Text.Json.Nodes.JsonArray
 						{
-							"style.css"
+							"apiStyle.css"
 						}
 					}
 				}
@@ -47,7 +48,7 @@ namespace CharacterCreator.API
 				{
 					using (responseStream)
 					{
-						using var outputFileWriter = File.OpenWrite(_outputLocation + filename + ".pdf");
+						using var outputFileWriter = File.OpenWrite(_temp + filename + ".pdf");
 						responseStream.CopyTo(outputFileWriter);
 					}
 				}
@@ -102,7 +103,7 @@ namespace CharacterCreator.API
 				" \r\n</div>\r\n</div>\r\n</div>\r\n<br />\r\n<div>\r\n<div class=\"backStoryBox\">\r\n<p class=\"centerText height30 borderLow\">Backstory</p>\r\n" +
 				"<p class=\"font6\">" + character.Backstory + "</p>\r\n</div>\r\n</div>\r\n<br />\r\n</div>\r\n</body>\r\n</html>";
 
-			File.WriteAllText( _resourceLocation + "character.html", htmlString);
+			File.WriteAllText( _resourceLocation + character.Name + ".html", htmlString);
 		}
 
 

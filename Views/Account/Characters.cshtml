@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Character>
+
+<h3>View and Edit Your Characters</h3>
+@if (Model != null)
+{
+<div class="text-center">
+	@foreach (Character character in Model)
+	{
+	<partial name="EditCharacterPartial.cshtml" for="@character"/>
+	}
+</div>
+}
