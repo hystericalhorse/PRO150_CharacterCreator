@@ -179,11 +179,19 @@ namespace CharacterCreator.Controllers
 			return View(CharacterManager.character);
 		}
 
-        //[Route("MyCharacters/{id?}")]
-        //public IActionResult CharacterSheet(int? id)
-        //{
-        //    
-        //    return View("CharacterSheetPartial", ch);
-        //}
-    }
+		//[Route("MyCharacters/{id?}")]
+		//public IActionResult CharacterSheet(int? id)
+		//{
+		//    
+		//    return View("CharacterSheetPartial", ch);
+		//}
+
+		//this should create a character pdf located in the wwwroot/Apifiles/ApiOutput
+		//Change redirect to action of choice
+		public IActionResult printPDF(Character character)
+		{
+			API.API.runApiHtml(character, character.Name);
+			return RedirectToAction("");
+		}
+	}
 }
