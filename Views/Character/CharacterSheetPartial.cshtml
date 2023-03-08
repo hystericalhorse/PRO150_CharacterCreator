@@ -65,7 +65,7 @@ else
 }
 <div>
 	<form asp-controller="Character" asp-action="printPDF">
-		<input type="hidden" name="character" value="@Model"/>
+		<input type="hidden" name="charID" value="@Model.CharacterID"/>
 		<button type="submit">
 			<p>
 				Print

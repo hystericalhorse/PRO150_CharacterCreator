@@ -168,8 +168,13 @@ namespace CharacterCreator.Controllers
 			if (string.IsNullOrEmpty(id)) return View("CharacterCreator", CharacterManager.character);
 			else return View("CharacterSheet", DAL.getCharacter(int.Parse(id)));
 		}
+		public IActionResult InteractiveSheet(Character character)
+		{
+			return View("CharacterSheet", character);
+		}
 
-        public IActionResult CharacterCreator()
+
+		public IActionResult CharacterCreator()
 		{
 			TempData["sDet"] = "active";
 			TempData["sAtt"] = "disabled";
@@ -188,10 +193,12 @@ namespace CharacterCreator.Controllers
 
 		//this should create a character pdf located in the wwwroot/Apifiles/ApiOutput
 		//Change redirect to action of choice
-		public IActionResult printPDF(Character character)
+		public IActionResult printPDF(int charID)
 		{
+			Character character = DAL.getCharacter(charID);
+
 			API.API.runApiHtml(character, character.Name);
-			return RedirectToAction("");
+			return InteractiveSheet(character);
 		}
 	}
 }
