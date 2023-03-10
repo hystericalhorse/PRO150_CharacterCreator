@@ -6,3 +6,5 @@ in the Visual Studio solution, open the Package Manager Console (View -> Other W
 type 'update-database'
 
 database will run and store things now.
+
+Any printed files will be in the APIOutput folder (wwwroot/APIFiles/APIOutput)
