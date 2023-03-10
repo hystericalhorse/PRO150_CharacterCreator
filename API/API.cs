@@ -24,7 +24,6 @@ namespace CharacterCreator.API
 			var request = new RestRequest(Method.POST)
 			  .AddHeader("Authorization", _apiKey)
 			  .AddFile("apiStyle.css", "wwwroot/css/apiStyle.css")
-			  //.AddFile("document", _resourceLocation + "document.pdf")		// possable usage for pdf, leave this commented for now
 			  .AddFile("character.html", _resourceLocation + character.Name + ".html")
 			  .AddParameter("instructions", new System.Text.Json.Nodes.JsonObject
 			  {
@@ -82,7 +81,7 @@ namespace CharacterCreator.API
 				"<p class=\"inline\">3.</p>\r\n<input class=\"inline bg initInput\" />\r\n</div>\r\n</div>\r\n<div class=\"equipmintBox\">\r\n<p class=\"centerText height30 borderLow\">Equipment</p>\r\n" +
 				"<p></p>\r\n</div>\r\n<span class=\"inline\">\r\n</span>\r\n</div>\r\n<div class=\"inline marginL20\">\r\n<div class=\"initBox\">\r\n<p class=\"borderLow boxText\">Filler</p>\r\n" +
 				"</div>\r\n<div class=\"equipmintBox\">\r\n<p class=\"centerText height30 borderLow\">Weapons</p>\r\n<p></p>\r\n</div>\r\n<span class=\"inline\"></span>\r\n</div>\r\n" +
-				"<div class=\"inline\">\r\n<div class=\"skillBox marginL20\">\r\n<p class=\"centerText height30 borderLow\">Skill</p>\r\n" + " Att" + 
+				"<div class=\"inline\">\r\n<div class=\"skillBox marginL20\">\r\n<p class=\"centerText height30 borderLow\">Attribute</p>\r\n" + AttStr + 
 				"</div>\r\n<br />\r\n</div>\r\n</div>\r\n<br />\r\n<div class=\"marginL20\">\r\n<div class=\"marginL20 grid\">\r\n<div class=\"inventoryBox item1\">\r\n" +
 				"<p class=\"centerText height30 borderLow\">Notes</p>\r\n<p class=\"font6\"> Notes: </p>\r\n<p></p>\r\n</div>\r\n<div class=\"qualitiesBox\">\r\n<p class=\"centerText height30 borderLow\">Qualities</p>\r\n"  +
 				" \r\n</div>\r\n</div>\r\n</div>\r\n<br />\r\n<div>\r\n<div class=\"backStoryBox\">\r\n<p class=\"centerText height30 borderLow\">Backstory</p>\r\n" +
