@@ -1,0 +1,8 @@
+INSTRUCTIONS!
+
+install Microsoft SQL Server 2019
+in the Visual Studio solution, open the Package Manager Console (View -> Other Windows -> Package Manager Console)
+
+type 'update-database'
+
+database will run and store things now.
